@@ -9,7 +9,7 @@
 title:       Type
 email:       ''
 description: ''
-baseurl:     '' # The subpath of your site, e.g. /blog
+baseurl:     '' /type # The subpath of your site, e.g. /blog
 url:         'https://abhilashjp.github.io/type/' # The base hostname & protocol for your site
 twitter:     ''
 github:      ''
