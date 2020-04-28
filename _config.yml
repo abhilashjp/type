@@ -6,15 +6,18 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title:       Type
-email:       ''
+title:       Abhilash John Philip
+email:       'abhilashjohn07@gmail.com'
 description: ''
 baseurl:     '' # The subpath of your site, e.g. /blog
 url:         'https://abhilashjp.github.io/type/' # The base hostname & protocol for your site
-twitter:     ''
+twitter:     'http://twitter.com/abhilashjp'
 github:      ''
-instagram:   ''
+instagram:   'http://instagram.com/abhilashjp'
 facebook:    ''
+linkedin:    'http://linkedin.com/in/abhilashjohnphilip'
+Resume:      'https://www.visualcv.com/abhilashjp' 
+Goodreads:   'https://www.goodreads.com/abhilashjohn'
 
 markdown:  kramdown
 permalink: pretty
