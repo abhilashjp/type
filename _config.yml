@@ -9,7 +9,7 @@
 title:       Abhilash John Philip
 email:       'abhilashjohn07@gmail.com'
 description: ''
-baseurl:     '/type' # The subpath of your site, e.g. /blog
+baseurl:     '' # The subpath of your site, e.g. /blog
 url:         'https://abhilashjp.github.io' # The base hostname & protocol for your site
 twitter:     'http://twitter.com/abhilashjp'
 github:      ''
