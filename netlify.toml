@@ -1,0 +1,5 @@
+# resolve the "new" URL to a function
+[[redirects]]
+  from = "/docs/*"
+  to = "https://lookup-guides.netlify.app :splat"
+  status = 200
