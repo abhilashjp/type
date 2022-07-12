@@ -2,4 +2,4 @@
 [[redirects]]
   from = "/docs/*"
   to = "https://lookup-guides.netlify.app/ :splat"
-  status = 200
+  status = 200!
