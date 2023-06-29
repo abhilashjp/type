@@ -33,7 +33,7 @@ Clicking on search button will take them to a search listings page. This page co
 
 Since the we had very less click stream data, there was nearly no personlisation possible in this ranking list.
 
-### Now 
+#### Now 
 
 We started with identifying the parameters that every home seeker will have in mind while they start looking for a property. Through user interviews, session recording  and the analysis property filter’s usage data, we came to the conclusion that even if a user hasn’t finalized on a locality, they will still have some basic criteria on the budget range and the BHK type(Bedroom Hall Kitchen). 
 
@@ -43,7 +43,17 @@ Hence we decided to make budget range and the BHK type part of the first timer v
 
 We released this as experiment. Initially we were slightly concerned about the drop off this new user journey can cause due to introduction of the additional steps in user journey. This was worry as unnecessary as the improvement in the conversion was far out weighed its impact on the drop offs when compared to the control group . We ran the experiment for a few weeks and once we established that the results were [statistically significant](https://abtestguide.com/calc/)  we rolled this out to the rest of user set.
 
-### Additional enhancement
+<table align="center" border="1px" border-color="#dedede"><tr><td>
+  <img src="/images/posts/basic-profiling user-journey.png" alt="User Journey" width="400"/>
+  </td></tr>
+  <tr>
+  <td>
+  <img src="/images/posts/basic-profiling-user-journey-1.png" alt="User Journey" width="400"/>
+  </td></tr>
+  <tr><td align="center"> New Onboardingn Journey </td></tr>
+</table>
+
+#### Additional enhancement
 
 We wanted to experiment with another hypothesis, since users have put in high effort to download and install the app on their mobile device, will they be okay to signup with their phone number when they open the app for the first time.  For this we ran an experiment with two variants 
 
