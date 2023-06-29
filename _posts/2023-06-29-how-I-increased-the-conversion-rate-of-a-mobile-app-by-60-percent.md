@@ -54,7 +54,7 @@ We released this as experiment. Initially we were slightly concerned about the d
 
 #### Additional enhancement
 
-We wanted to experiment with another hypothesis. Since users have put in high effort to download and install the app on their mobile device, will they be okay to signup with their phone number when they open the app for the first time. This way we could avoid verifying their phone numbers when they drop a lead on a property. For this hypothesis, we ran an experiment with two variants. 
+We wanted to experiment with another hypothesis. Since users put in high efforts to download and install the app on their mobile device, will they be okay to signup with their phone number when they open the app for the first time. This way we could avoid verifying their phone numbers when they drop a lead on a property. For this hypothesis, we ran an experiment with two variants. 
 
 1. Mandatory signup with OTP verification 
 2. Prominent signup screen with an option to skip this step. 
