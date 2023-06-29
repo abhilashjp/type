@@ -56,6 +56,21 @@ Initially we ran the sales with the help of word of mouth. Slowly we started gat
   <tr><td align="center"> Poster</td></tr></table>
 
 
+## Media Coverage 
 
+### Online media
+* India today article - [Kerala youngsters bring affordable purifier to Delhi's air pollution problems](https://www.indiatoday.in/lifestyle/story/air-purifiers-entrepreneurs-pollution-kerala-352377-2016-11-17) 
+* AajTak Artcile [केरल के नौजवानों ने बनाया सबसे कम दाम का एयर प्यूरिफायर, अद्भुत पहल](https://www.aajtak.in/education/story/youths-from-kerala-make-cheapest-air-purifier-in-india-389527-2016-11-18)
+* [Mangaloretoday](https://www.mangaloretoday.com/today/Kerala-youngsters-bring-affordable-purifier-to-air-pollution-problem.html)
 
+### Print Media
 
+<table align="center" border="1px" border-color="#dedede"><tr><td>
+  <img src="/images/posts/saafair-coverage-mail-today.jpg" alt="Mail today"  width="500"/>
+  </td></tr>
+  <tr><td align="center"> Artcile on Mail today</td></tr></table>
+
+  <table align="center" border="1px" border-color="#dedede"><tr><td>
+  <img src="/images/posts/metro-manorama-coverage.png" alt="Metro Manorama"  width="500"/>
+  </td></tr>
+  <tr><td align="center"> Artcile on Manorama</td></tr></table>
