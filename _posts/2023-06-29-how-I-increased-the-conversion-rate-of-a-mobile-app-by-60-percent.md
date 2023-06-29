@@ -38,7 +38,7 @@ We started with identifying the parameters that every home seeker will have in m
 
 This is broadly true for both Rent and Buy cases. For buy cases there is also a knowledge building process which I will talk about in a separate blog post. 
 
-Hence we decided to make budget range and the BHK type part of the first timer visitor’s user journey and called it ‘Basic Profiling’.  Once they click on search after selecting thes details, they were taken to a listings page with more refined list of properties as per their requirements. 
+Hence we decided to make budget range and the BHK type capture part of the first timer visitor’s user journey and called it ‘Basic Profiling’.  Once they click on search after selecting thes details, they were taken to a listings page with more refined list of properties as per their requirements. 
 
 We released this as experiment. Initially we were slightly concerned about the drop off this new user journey can cause due to introduction of the additional steps in user journey. This was worry as unnecessary as the improvement in the conversion was far out weighed its impact on the drop offs when compared to the control group . We ran the experiment for a few weeks and once we established that the results were [statistically significant](https://abtestguide.com/calc/)  we rolled this out to the rest of user set.
 
