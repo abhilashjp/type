@@ -40,7 +40,7 @@ This is broadly true for both Rent and Buy cases. For buy cases there is also a 
 
 Hence we decided to make budget range and the BHK type capture part of the first time visitor’s user journey and called it ‘Basic Profiling’.  Once they click on search after selecting these details, they were taken to a listings page with more refined list of properties as per their requirements. 
 
-We released this as experiment. Initially we were slightly concerned about the drop off this new user journey can cause due to introduction of the additional steps in user journey. This was worry as unnecessary as the improvement in the conversion was far out weighed its impact on the drop offs when compared to the control group . We ran the experiment for a few weeks and once we established that the results were [statistically significant](https://abtestguide.com/calc/)  we rolled this out to the rest of user set.
+We released this as experiment. Initially we were slightly concerned about the drop offs this new user journey can cause due to introduction of the additional steps. This worry as unnecessary as the improvement in the conversion rate far out weighed its impact on the drop offs in comparison with the control group. We ran the experiment for a few weeks and once we established that the results were [statistically significant](https://abtestguide.com/calc/)  we rolled this out to the rest of user set.
 
 <table align="center" border="1px" border-color="#dedede"><tr><td>
   <img src="/images/posts/basic-profiling user-journey.png" alt="User Journey" width="500"/>
