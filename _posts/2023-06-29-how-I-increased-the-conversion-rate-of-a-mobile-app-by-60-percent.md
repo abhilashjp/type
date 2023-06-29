@@ -33,6 +33,15 @@ Clicking on search button will take them to a search listings page. This page co
 
 Since the we had very less click stream data, there was nearly no personlisation possible in this ranking list.
 
+### Now 
+
+We started with identifying the parameters that every home seeker will have in mind while they start looking for a property. Through user interviews, session recording  and the analysis property filter’s usage data, we came to the conclusion that even if a user hasn’t finalized on a locality, they will still have some basic criteria on the budget range and the BHK type(Bedroom Hall Kitchen). 
+
+This is broadly true for both Rent and Buy cases. For buy cases there is also a knowledge building process which I will talk about in a separate blog post. 
+
+Hence we decided to make budget range and the BHK type part of the first timer visitor’s user journey and called it ‘Basic Profiling’.  Once they click on search after selecting thes details, they were taken to a listings page with more refined list of properties as per their requirements. 
+
+We released this as experiment. Initially we were slightly concerned about the drop off this new user journey can cause due to introduction of the additional steps in user journey. This was worry as unnecessary as the improvement in the conversion was far out weighed its impact on the drop offs when compared to the control group . We ran the experiment for a few weeks and once we established that the results were [statistically significant](https://abtestguide.com/calc/)  we rolled this out to the rest of user set.
 
 
 <iframe src="https://youtube.com/shorts/g5kmohe1Hdc" frameborder="0"> </iframe>
