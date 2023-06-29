@@ -53,7 +53,7 @@ Finally we launched our first 2 models in September 2016
 
 I also quickly launched a magento website to sell online under the domain saafair.com. Along with these we also started selling N95 Masks and Carbon Mask. We also tried selling indoor plants under the category clean air plants. 
 
-Initially we ran the sales with the help of word of mouth. Slowly we started gathering traction. During this time we luckily we got some good media media coverage. This was a tipping point for us as it immediately boosted our sales. We also started getting inbound calls for investments.
+Initially we ran the sales with the help of word of mouth. Slowly we started gathering traction. During this time we luckily we got some good media media coverage. This was a tipping point for us as it immediately boosted our sales. The interesting thisng was the orders were from all over India. We also started getting inbound calls for investments.
 
 <table align="center" border="1px" border-color="#dedede"><tr><td>
   <img src="/images/posts/saafair-poster.jpg" alt="Saafair Poster"  width="500"/>
@@ -64,7 +64,7 @@ Things were getting serious now. We had to decide on the way forward for Saafair
 
 As we scaled it became more clear to us that we need to we need to redesign it to make more appealing. Our users should feel confident in displaying to others may be by placing it the front room. We had to move away from our existing sheet metal model to a Plastic based mold. 
 
-The since cost was our only advantage, these brands could easily out compete us with heavy discounting any day. We were not an experts in any of the areas including manufacturing, supply chain or even marketing. What we had was curiosity and a drive to build things. We could have continued the same without scaling for a couple of years.
+The since cost was our only advantage, these brands could easily out compete us with heavy discounting any day. We were not experts in any of the areas including manufacturing, supply chain or even marketing. What we had was curiosity and a drive to build things. We could have continued the business for a couple of more years. But we realized that to scale this venture to the next level is a different ball game all together and we may not have skill to do it at the time. Hence we decided to shut this down in a few months
 
 ## Media Coverage 
 
