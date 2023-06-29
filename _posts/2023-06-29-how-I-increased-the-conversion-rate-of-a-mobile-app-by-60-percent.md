@@ -6,7 +6,7 @@ category: product
 published: true
 ---
 
-During my time at housing.com I was fortunate to work on the consumer mobile app. My primary job was to improve the conversion rate of the mobile app.  In this article I will try to discuss the some of the initiatives that helped me to increase the conversion rate of the app.
+During my time at housing.com in 2018 I was fortunate to work on the consumer mobile app. My primary job was to improve the conversion rate of the mobile app.  In this article I will try to discuss the some of the initiatives that helped me to increase the conversion rate of the app.
 
 Housing is one of the real estate classifieds portals in India. [Housing.com](http://Housing.com) helps people to find real estate properties for buying or renting. The properties are listed on the platform by real estate agents or home owners. 
 
@@ -18,8 +18,7 @@ Let me first define the **conversion rate**.
 
 User conversion in this context refers to the percentage of users who submit a lead by verifying their phone number on a property they like, out of the total number of users who visit the mobile app. 
 
-Below are some of the initiatives that helped me improve the conversion rates
-
+Below are some of the initiatives that helped me improve the conversion rates. All the changes mentioned below went live after A/B testing experiments. I have listed down only those experiments which were successful. 
 
 ## The Onboarding Journey 
 
@@ -50,12 +49,12 @@ We released this as experiment. Initially we were slightly concerned about the d
   <td>
   <img src="/images/posts/basic-profiling-user-journey-1.png" alt="User Journey" width="400"/>
   </td></tr>
-  <tr><td align="center"> New Onboardingn Journey </td></tr>
+  <tr><td align="center"> Mockup of the new onboarding journey </td></tr>
 </table>
 
 #### Additional enhancement
 
-We wanted to experiment with another hypothesis, since users have put in high effort to download and install the app on their mobile device, will they be okay to signup with their phone number when they open the app for the first time.  For this we ran an experiment with two variants 
+We wanted to experiment with another hypothesis, since users have put in high effort to download and install the app on their mobile device, will they be okay to signup with their phone number when they open the app for the first time. This way we could avoid verifying their phone numbers when they drop a lead on a property. For this hypothesis, we ran an experiment with two variants. 
 
 1. Mandatory signup with OTP verification 
 2. Prominent signup screen with an option to skip this step. 
@@ -63,3 +62,17 @@ We wanted to experiment with another hypothesis, since users have put in high ef
 To our surprise Option 1 turned out to be the winner. Still we decided to go ahead with Option 2.
 
 <iframe width="420" height="315" src="http://www.youtube.com/embed/g5kmohe1Hdc" frameborder="0" > </iframe>
+
+
+## Filter history
+
+A mentioned earlier the primary search parameter was a locality, lets say a user changes the locality, it is highly likely that the rest of the search parameters will remain the same. With this hypothesis we made it easier for user to apply previous applied filters via filter history recommendations.
+
+<table align="center" border="1px" border-color="#dedede">
+  <tr>
+  <td>
+  <img src="/images/posts/past-filters.png" alt="Past filters recommendation" width="200"/>
+  </td></tr>
+  <tr><td align="center"> Past filters recommendation </td></tr>
+</table>
+
