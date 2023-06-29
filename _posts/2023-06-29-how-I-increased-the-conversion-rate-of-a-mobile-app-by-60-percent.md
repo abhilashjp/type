@@ -52,5 +52,4 @@ We wanted to experiment with another hypothesis, since users have put in high ef
 
 To our surprise Option 1 turned out to be the winner. Still we decided to go ahead with Option 2.
 
-
-<iframe src="https://youtube.com/shorts/g5kmohe1Hdc" frameborder="0"> </iframe>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/g5kmohe1Hdc" frameborder="0" > </iframe>
