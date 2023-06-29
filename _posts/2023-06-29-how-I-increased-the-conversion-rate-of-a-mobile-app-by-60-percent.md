@@ -43,11 +43,11 @@ Hence we decided to make budget range and the BHK type part of the first timer v
 We released this as experiment. Initially we were slightly concerned about the drop off this new user journey can cause due to introduction of the additional steps in user journey. This was worry as unnecessary as the improvement in the conversion was far out weighed its impact on the drop offs when compared to the control group . We ran the experiment for a few weeks and once we established that the results were [statistically significant](https://abtestguide.com/calc/)  we rolled this out to the rest of user set.
 
 <table align="center" border="1px" border-color="#dedede"><tr><td>
-  <img src="/images/posts/basic-profiling user-journey.png" alt="User Journey" width="400"/>
+  <img src="/images/posts/basic-profiling user-journey.png" alt="User Journey" width="500"/>
   </td></tr>
   <tr>
   <td>
-  <img src="/images/posts/basic-profiling-user-journey-1.png" alt="User Journey" width="400"/>
+  <img src="/images/posts/basic-profiling-user-journey-1.png" alt="User Journey" width="500"/>
   </td></tr>
   <tr><td align="center"> Mockup of the new onboarding journey </td></tr>
 </table>
@@ -66,13 +66,22 @@ To our surprise Option 1 turned out to be the winner. Still we decided to go ahe
 
 ## Filter history
 
-A mentioned earlier the primary search parameter was a locality, lets say a user changes the locality, it is highly likely that the rest of the search parameters will remain the same. With this hypothesis we made it easier for user to apply previous applied filters via filter history recommendations.
+A mentioned earlier, the primary search parameter was a locality, lets say a user changes the locality, it is highly likely that the rest of the search parameters will remain the same. With this hypothesis we made it easier for users to apply previous applied filters via filter history recommendations.
 
 <table align="center" border="1px" border-color="#dedede">
   <tr>
   <td>
-  <img src="/images/posts/past-filters.png" alt="Past filters recommendation" width="200"/>
+  <img src="/images/posts/past-filters.png" alt="Past filters recommendation" align="center" width="200"/>
   </td></tr>
-  <tr><td align="center"> Past filters recommendation </td></tr>
+  <tr><td align="center">Last used filters </td></tr>
 </table>
 
+## Accessibility 
+
+<table align="center" border="1px" border-color="#dedede">
+  <tr>
+  <td>
+  <img src="/images/posts/thumb-zone-mapping.png" alt="accessibility of the thumb " align="center" width="500"/>
+  </td></tr>
+  <tr><td align="center">Accessibility of the thumb </td></tr>
+</table>
