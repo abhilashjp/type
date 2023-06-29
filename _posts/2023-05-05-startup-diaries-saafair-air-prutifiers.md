@@ -34,8 +34,7 @@ We named our enterprise "Saafair". ‘Saaf’ in Hindi means clean, thus the wor
   <tr><td>
 <img src="/images/posts/saafair-logo.png" alt="Saafair logo" width="200"/>
   </td>
-  <tr><td align="center"> Saafair logo </td></tr>
-</table>
+  <tr><td align="center"> Saafair logo </td></tr></table>
 
 Our idea was to sell low-cost air purifiers with a <a target="_blank" href="https://www.amazon.in/Honeywell-HCMF25M0012-Compound-Filter-Activated/dp/B076HP91MN/ref=sr_1_8?crid=2M09A665Y2AVC&_encoding=UTF8&tag=ajp092-21&linkCode=ur2&linkId=d17da978220324128b8eea1140df223e&camp=3638&creative=24630">Hepa filter </a>  and a fresh air fan. We did some hustle and tied up with OEMs for Hepa filters and other related components. We also purchased an air pollution monitor. The first one we bought was found to be inaccurate and hence we had to import another one by <a target="_blank" href="https://www.amazon.in/Dylos-DC1100-Pro-quality-monitor/dp/B004AWEG0Y?&_encoding=UTF8&tag=ajp092-21&linkCode=ur2&linkId=3d7598df10bab96c35bbfda6e0d8d897&camp=3638&creative=24630">Dylos, DC1100 Pro Air Quality Monitor </a> via one of our relatives in Canada.
 
@@ -48,12 +47,10 @@ Finally we launched our first 2 models in September 2016
 <table align="center" border="1px" border-color="#dedede"><tr><td>
   <img src="/images/posts/kosher-air-purifier.jpg" alt="Kosher" width="200"/>
   </td></tr>
- 
-<tr><td align="center"> Kosher Model </td></tr>
-</table>
+<tr><td align="center"> Kosher Model </td></tr></table>
+
 
 <table align="center" border="1px" border-color="#dedede"><tr><td>
   <img src="/images/posts/saafair-poster.jpg" alt="Saafair Poster" max-width: 40%;/>
   </td>
-  <tr><td align="center"> Poster</td></tr>
-</table>
+  <tr><td align="center"> Poster</td></tr></table>
