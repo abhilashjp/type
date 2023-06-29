@@ -77,7 +77,7 @@ A mentioned earlier, the primary search parameter was a locality, lets say a use
 </table>
 
 ## Accessibility 
-We re-looked at the entire app from the lens of accessibility for the thumb. We observed that on the search listings page the accessibility of the filters and the locality search was hard. Also the Menu options available easily accessible at the bottom of the page were not at all relevant in the context. 
+We re-looked at the entire app from the lens of accessibility for the thumb. We observed that on the search listings page the accessibility of the filters and the locality search was hard. Also the ‘Menu’ options at the bottom of the page which are easily accessible were not at all relevant in the context. 
 
 <table align="center" border="1px" border-color="#dedede">
   <tr>
