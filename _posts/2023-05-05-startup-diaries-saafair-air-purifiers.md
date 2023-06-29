@@ -4,7 +4,7 @@ layout: post
 title : Startup diaries - Saafair.com, Air  Purifiers
 published: true
 comments: false
-category: Startup Diaries
+category: startup-diaries
 tags: [Startup]
 
 ---
