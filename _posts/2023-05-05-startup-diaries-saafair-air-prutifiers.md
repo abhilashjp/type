@@ -17,12 +17,22 @@ We couldn’t let go the fact that the high prices for the air purifiers were du
 
 Here is how our initial test models looked like.
 
-<kbd>
-<img src="/images/posts/kosher-prototype-1.jpg" alt="drawing" width="200"/>
-</kbd>
-<img src="/images/posts/kosher-prototype-1.jpg" alt="drawing" width="200" style="border: 2px solid  gray;"/>
-![Kosher Prototype](/images/posts/kosher-prototype-1.jpg) ![Kosher Prototype](/images/posts/kosher-prototype-1.jpg)
+
+<table align="center"><tr><td>
+  <img src="/images/posts/kosher-prototype-1.jpg" alt="Kosher Prototype" width="200"/>
+  </td>
+  <td>
+  <img src="/images/posts/kosher-prototype-2.jpg" alt="Kosher Prototype" width="200"/>
+  </td></tr>
+  <tr><td colspan="2" align="center"> Kosher Prototype </td></tr>
+
+</table>
+
 
 We named our enterprise "Saafair". ‘Saaf’ in Hindi means clean, thus the word translates to “Clean air”.
+<table align="center"><tr><td>
+<img src="/images/posts/saafair-logo.png" alt="Saafair logo" width="200"/>
+  </td>
+  <tr><td align="center"> Saafair logo </td></tr>
 
-![Saafair Logo](/images/posts/saafair-logo.png)
+</table>
