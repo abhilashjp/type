@@ -28,7 +28,7 @@ When a user opens the housing app for the first time after installation, they we
 
 This homepage contained a search bar, where the user had to add the name of the locality they are looking for and click on search button. This home page also had a list of promoted properties and categories.  
 
-Clicking on search button will take them to a search listings page. This page contained the list of properties available in the locality. The list of properties where sorted in the order of ranking. 
+Clicking on search button will take them to a search listings page. This page contained the list of properties available in the locality. The list of properties where sorted in the order of popularity ranking. 
 
 Since the we had very less click stream data, there was nearly no personlisation possible in this ranking list.
 
