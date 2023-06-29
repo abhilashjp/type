@@ -9,7 +9,7 @@ tags: [Startup]
 
 ---
 
-Every year air pollution becomes a major issue across North India during winters. It was during the winter season of 2015, me and my friend (roommate during that time) decided to buy an air purifier. When we started exploring options, we soon realized that the options available are expensive. 
+Every year air pollution becomes a major issue across North India during winters. It was during the winter season of 2015, me and my friend (roommate during that time) decided to buy an air purifier. When we started exploring air purifiers, we soon realized that the options available are expensive. 
 
 When we read more about the air purifier we came to know that the components required to build an air purifier is fairly simple and can be sourced from different manufactures with hustle efforts.  
 
