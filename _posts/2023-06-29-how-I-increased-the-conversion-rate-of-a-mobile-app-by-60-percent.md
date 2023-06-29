@@ -34,7 +34,7 @@ Since these are new users, we had no click stream data, there was nearly no pers
 
 #### Now 
 
-We started with identifying the parameters that every home seeker will have in mind while they start looking for a property. Through user interviews, session recording  and the analysis property filter’s usage data, we came to the conclusion that even if a user hasn’t finalized on a locality, they will still have some basic criteria on the budget range and the BHK type(Bedroom Hall Kitchen). 
+We started with identifying the parameters that every home seeker will have in mind while they start looking for a property. Through user interviews, session recording  and the analysis of the property filter’s usage data, we came to the conclusion that even if a user hasn’t finalized on a locality, they will still have some basic criteria on the budget range and the BHK type(Bedroom Hall Kitchen). 
 
 This is broadly true for both Rent and Buy cases. For buy cases there is also a knowledge building process which I will talk about in a separate blog post. 
 
