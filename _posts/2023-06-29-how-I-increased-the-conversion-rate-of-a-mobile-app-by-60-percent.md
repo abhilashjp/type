@@ -43,5 +43,14 @@ Hence we decided to make budget range and the BHK type part of the first timer v
 
 We released this as experiment. Initially we were slightly concerned about the drop off this new user journey can cause due to introduction of the additional steps in user journey. This was worry as unnecessary as the improvement in the conversion was far out weighed its impact on the drop offs when compared to the control group . We ran the experiment for a few weeks and once we established that the results were [statistically significant](https://abtestguide.com/calc/)  we rolled this out to the rest of user set.
 
+### Additional enhancement
+
+We wanted to experiment with another hypothesis, since users have put in high effort to download and install the app on their mobile device, will they be okay to signup with their phone number when they open the app for the first time.  For this we ran an experiment with two variants 
+
+1. Mandatory signup with OTP verification 
+2. Prominent signup screen with an option to skip this step. 
+
+To our surprise Option 1 turned out to be the winner. Still we decided to go ahead with Option 2.
+
 
 <iframe src="https://youtube.com/shorts/g5kmohe1Hdc" frameborder="0"> </iframe>
