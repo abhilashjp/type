@@ -30,7 +30,7 @@ This homepage contained a search bar, where the user had to add the name of the 
 
 Clicking on search button will take them to a search listings page. This page contained the list of properties available in the locality. The list of properties where sorted in the order of popularity ranking. 
 
-Since these are new users, we had no click stream data, there was nearly no personlisation possible in this ranking list.
+Since these are new users, we had no click stream data, there was nearly no personlisation possible in this ranked list.
 
 #### Now 
 
