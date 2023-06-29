@@ -53,7 +53,7 @@ Finally we launched our first 2 models in September 2016
 
 I also quickly launched a magento website to sell online under the domain saafair.com. Along with these, we also started selling N95 Masks and Carbon Masks. We also tried selling indoor plants under the category clean air plants. 
 
-Initially we ran the sales with the help of word of mouth. Slowly we started gathering traction. During this time we luckily got some good media coverage. This was a tipping point for us as it immediately boosted our sales. The interesting thisng was the orders were from all over India. We also started getting inbound calls for investments.
+Initially we ran the sales with the help of word of mouth. Slowly we started gathering traction. During this time we luckily got some good media coverage. This was the tipping point for us as it immediately boosted our sales. The interesting thisng was the orders were from all over India. We also started getting inbound calls for investments.
 
 <table align="center" border="1px" border-color="#dedede"><tr><td>
   <img src="/images/posts/saafair-poster.jpg" alt="Saafair Poster"  width="500"/>
