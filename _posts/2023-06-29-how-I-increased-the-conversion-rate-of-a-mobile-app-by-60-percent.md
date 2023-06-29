@@ -99,3 +99,18 @@ We made filters more accessible by moving it to the bottom section of the screen
   <img src="/images/posts/filters-now.jpg" alt="Filters now" align="center" width="200"/>
   </td></tr>
 </table>
+
+## Returning user Home page
+
+We started giving a differentiated experience for the returning users. One such change was giving more prominence to the continue search button over the new search box. 
+
+<table align="center" border="1px" border-color="#dedede">
+  
+  <tr><td align="center">Then</td><td align="center">Now</td></tr>
+  <tr><td>
+  <img src="/images/posts/returning-user-then.png" alt="Search then" align="center" width="200"/>
+  </td>
+  <td>
+  <img src="/images/posts/returning-user-home.png" alt="Search  now" align="center" width="200"/>
+  </td></tr>
+</table>
