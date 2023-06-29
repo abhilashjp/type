@@ -64,7 +64,7 @@ Things were getting serious now. We had to decide on the way forward for Saafair
 
 As we scaled, it became more clear to us that we need to redesign our flagship model to make more appealing. Our users should feel confident in displaying to others may be by placing it the front room. We had to move away from our existing sheet metal model to a Plastic based mold. 
 
-Since cost was our only advantage, these big brands could easily out compete us with heavy discounting any day. We were not experts in any of the areas including manufacturing, supply chain or even marketing. What we had was curiosity and a drive to build things. We could have continued the business for a couple of more years. But we realized that to scale this venture to the next level is a different ball game all together and we may don't have skill to do it at the time. Hence we decided to shut this down. 
+Since cost was our only advantage, these big brands could easily out compete us with heavy discounting any day. We were not experts in any of the areas including manufacturing, supply chain or even marketing. What we had was curiosity and a drive to build things. We could have continued the business for a couple of more years. But we realized that to scale this venture to the next level is a different ball game all together and we don't have skill to do it at the time. Hence we decided to shut this down. 
 
 ## Media Coverage 
 
