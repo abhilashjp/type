@@ -77,6 +77,7 @@ A mentioned earlier, the primary search parameter was a locality, lets say a use
 </table>
 
 ## Accessibility 
+We re-looked at the entire app from the lens of accessibility for the thumb. We observed that on the search listings page the accessibility of the filters and the locality search was hard. Also the Menu options available easily accessible at the bottom of the page were not at all relevant in the context. 
 
 <table align="center" border="1px" border-color="#dedede">
   <tr>
@@ -84,4 +85,17 @@ A mentioned earlier, the primary search parameter was a locality, lets say a use
   <img src="/images/posts/thumb-zone-mapping.png" alt="accessibility of the thumb " align="center" width="500"/>
   </td></tr>
   <tr><td align="center">Accessibility of the thumb </td></tr>
+</table>
+
+We made filters more accessible by moving it to the bottom section of the screen. This improved the filters usages and caused improvement in the conversion rates.
+
+<table align="center" border="1px" border-color="#dedede">
+  
+  <tr><td align="center">Then</td><td align="center">Now</td></tr>
+  <tr><td>
+  <img src="/images/posts/filters-then.jpg" alt="Filters then" align="center" width="200"/>
+  </td>
+  <td>
+  <img src="/images/posts/filters-now.jpg" alt="Filters now" align="center" width="200"/>
+  </td></tr>
 </table>
