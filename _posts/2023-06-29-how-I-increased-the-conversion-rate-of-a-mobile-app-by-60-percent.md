@@ -10,7 +10,7 @@ During my time at housing.com in 2018, I was fortunate to work on the consumer m
 
 Housing is one of the real estate classifieds portals in India. [Housing.com](http://Housing.com) helps people to find real estate properties for buying or renting. The properties are listed on the platform by real estate agents or home owners. 
 
-I was a newbie to mobile apps when I started working on the app. I also had a few constraints. At that point in time the traffic on the mobile app lagged behind the mobile web and the desktop. I couldn’t implement any new features which required back end APIs as the back end team was occupied with the web priorities. 
+I was a newbie to mobile apps when I started working on the app. Frankly speaking, I was little scared to take up the challenge as I initially felt that features on the mobile app are on par with the mobile website and hence their won't be much scope for improvement. Hardly did I know that I was completely wrong at that point in time. I also had a few constraints. At that point in time the traffic on the mobile app lagged behind the mobile web and the desktop. I couldn’t implement any new features which required back end APIs as the back end team was occupied with the web priorities. 
 
 Through various initiatives, I was fortunate to improve the user conversion rates of the mobile app by more than 60%.
 
