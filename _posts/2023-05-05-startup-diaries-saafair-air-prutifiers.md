@@ -51,6 +51,6 @@ Finally we launched our first 2 models in September 2016
 
 
 <table align="center" border="1px" border-color="#dedede"><tr><td>
-  <img src="/images/posts/saafair-poster.jpg" alt="Saafair Poster" max-width: 40%;/>
+  <img src="/images/posts/saafair-poster.jpg" alt="Saafair Poster" max-width:"40%"/>
   </td>
   <tr><td align="center"> Poster</td></tr></table>
