@@ -66,7 +66,7 @@ To our surprise Option 1 turned out to be the winner. Still we decided to go ahe
 
 ## Filter history
 
-A mentioned earlier, the primary search parameter was a locality, lets say a user changes the locality, it is highly likely that the rest of the search parameters will remain the same. With this hypothesis we made it easier for users to apply previous applied filters via filter history recommendations.
+A mentioned earlier, the primary search parameter was a locality, lets say a user changes the locality, it is highly likely that the rest of the search parameters will remain the same. With this hypothesis we made it easier for users to apply previously applied filters via filter history recommendations.
 
 <table align="center" border="1px" border-color="#dedede">
   <tr>
