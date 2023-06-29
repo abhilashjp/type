@@ -58,7 +58,7 @@ Initially we ran the sales with the help of word of mouth. Slowly we started gat
 <table align="center" border="1px" border-color="#dedede"><tr><td>
   <img src="/images/posts/saafair-poster.jpg" alt="Saafair Poster"  width="500"/>
   </td></tr>
-  <tr><td align="center"> Poster</td></tr></table>
+  <tr><td align="center"> A pamphlet we made for distribution</td></tr></table>
 
 Things were getting serious now. We had to decide on the way forward for Saafair. We were competing against popular brands. These brands were selling the same item in a more aesthetically pleasing manner. We could have easily sold a couple of thousand orders. We had also found our Power Users in ‘people with breathing troubles’ due to heavy air pollution. Since the HEPA filters also had a shelf life of 3 to 4 months, we also had a subscription model in place for replacing the filters for the purifiers. 
 
