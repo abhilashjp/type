@@ -17,8 +17,8 @@ We couldn’t let go the fact that the high prices for the air purifiers were du
 
 Here is how our initial test models looked like.
 
-![Kosher Prototype](../img/kosher-prototype-1.jpg) ![Kosher Prototype](../img/kosher-prototype-1.jpg)
+![Kosher Prototype](/images/posts/kosher-prototype-1.jpg) ![Kosher Prototype](/images/posts/kosher-prototype-1.jpg)
 
 We named our enterprise "Saafair". ‘Saaf’ in Hindi means clean, thus the word translates to “Clean air”.
 
-![Saafair Logo](../img/saafair-logo.png)
+![Saafair Logo](/images/posts/saafair-logo.png)
