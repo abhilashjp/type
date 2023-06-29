@@ -6,7 +6,7 @@ category: product
 published: true
 ---
 
-During my time at housing.com in 2018 I was fortunate to work on the consumer mobile app. My primary job was to improve the conversion rate of the mobile app.  In this article I will try to discuss the some of the initiatives that helped me to increase the conversion rate of the app.
+During my time at housing.com in 2018, I was fortunate to work on the consumer mobile app. My primary job was to improve the conversion rate of the mobile app.  In this article I will try to discuss some of the initiatives that helped me to increase the conversion rate of the app.
 
 Housing is one of the real estate classifieds portals in India. [Housing.com](http://Housing.com) helps people to find real estate properties for buying or renting. The properties are listed on the platform by real estate agents or home owners. 
 
