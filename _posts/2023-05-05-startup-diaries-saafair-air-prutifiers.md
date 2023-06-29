@@ -62,9 +62,9 @@ Initially we ran the sales with the help of word of mouth. Slowly we started gat
 
 Things were getting serious now. We had to decide on the way forward for Saafair. We were competing against popular brands. These brands were selling the same item in a more aesthetically pleasing manner. We could have easily sold a couple of thousand orders. We had also found our Power Users in ‘people with breathing troubles’ due to heavy air pollution. Since the HEPA filters also had a shelf life of 3 to 4 months, we also had a subscription model in place for replacing the filters for the purifiers. 
 
-As we scaled it became more clear to us that we need to we need to redesign it to make more appealing. Our users should feel confident in displaying to others may be by placing it the front room. We had to move away from our existing sheet metal model to a Plastic based mold. 
+As we scaled, it became more clear to us that we need to redesign our flagship model to make more appealing. Our users should feel confident in displaying to others may be by placing it the front room. We had to move away from our existing sheet metal model to a Plastic based mold. 
 
-The since cost was our only advantage, these brands could easily out compete us with heavy discounting any day. We were not experts in any of the areas including manufacturing, supply chain or even marketing. What we had was curiosity and a drive to build things. We could have continued the business for a couple of more years. But we realized that to scale this venture to the next level is a different ball game all together and we may not have skill to do it at the time. Hence we decided to shut this down in a few months
+Since cost was our only advantage, these big brands could easily out compete us with heavy discounting any day. We were not experts in any of the areas including manufacturing, supply chain or even marketing. What we had was curiosity and a drive to build things. We could have continued the business for a couple of more years. But we realized that to scale this venture to the next level is a different ball game all together and we may don't have skill to do it at the time. Hence we decided to shut this down. 
 
 ## Media Coverage 
 
