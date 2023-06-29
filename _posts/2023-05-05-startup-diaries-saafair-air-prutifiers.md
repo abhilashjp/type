@@ -43,8 +43,8 @@ Our idea was to sell low-cost air purifiers with a <a target="_blank" href="http
 
 Finally we launched our first 2 models in September 2016
 
-1. Kosher - Our Flagship model. But still rudimentary in terms of current standards. 
-2. Puro - a DIY model with just a table Fan and a HEPA
+1. **Kosher** - Our Flagship model. But still rudimentary in terms of current standards. 
+2. **Puro** - a DIY model with just a table Fan and a HEPA
 
 <table align="center" border="1px" border-color="#dedede"><tr><td>
   <img src="/images/posts/kosher-air-purifier.jpg" alt="Kosher" width="200"/>
@@ -70,7 +70,7 @@ Since cost was our only advantage, these big brands could easily out compete us 
 
 ### Online media
 * India today article - [Kerala youngsters bring affordable purifier to Delhi's air pollution problems](https://www.indiatoday.in/lifestyle/story/air-purifiers-entrepreneurs-pollution-kerala-352377-2016-11-17) 
-* AajTak Article [केरल के नौजवानों ने बनाया सबसे कम दाम का एयर प्यूरिफायर, अद्भुत पहल](https://www.aajtak.in/education/story/youths-from-kerala-make-cheapest-air-purifier-in-india-389527-2016-11-18)
+* AajTak Article - [केरल के नौजवानों ने बनाया सबसे कम दाम का एयर प्यूरिफायर, अद्भुत पहल](https://www.aajtak.in/education/story/youths-from-kerala-make-cheapest-air-purifier-in-india-389527-2016-11-18)
 * [Mangaloretoday](https://www.mangaloretoday.com/today/Kerala-youngsters-bring-affordable-purifier-to-air-pollution-problem.html)
 
 ### Print Media
