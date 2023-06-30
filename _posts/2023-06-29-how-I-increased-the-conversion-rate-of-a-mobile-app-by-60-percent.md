@@ -61,7 +61,13 @@ We wanted to experiment with another hypothesis. Since users put in high efforts
 
 To our surprise Option 1 turned out to be the winner. Still we decided to go ahead with Option 2.
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/g5kmohe1Hdc" frameborder="0" > </iframe>
+
+<iframe width="315" height="560"
+src="https://www.youtube.com/embed/g5kmohe1Hdc"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen></iframe>
 
 
 ## Filter history
