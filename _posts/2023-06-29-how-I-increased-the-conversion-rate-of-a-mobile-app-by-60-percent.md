@@ -135,6 +135,45 @@ We made filters more accessible by moving it to the bottom section of the screen
   </td></tr>
 </table>
 
+## Information architecture
+
+We ran a survey among the users to understand all the things mattered to them while looking for a property. Housing.com used to have masked phone numbers for the home owners and agents. When a user calls the the agents or the home owners via masked phone numbers, the call gets recorded and these recording are available for access for a few months.  From these sources, we realized that certain information which we deemed as low priority were important to the users and in many cases they were unable to find such information on the properties.
+- For Rental properties
+    - Split up of the additional costs such as Maintenance fee, Brokerage etc.
+    - Whether Pets are allowed
+    - Available for bachelors
+    - 24Hr Water supply & electricity backup
+    - Parking Space
+- For Buy Properties
+    - Additional Charges
+    - Accessibility to certain landmarks
+    - Amenities
+    - Vastu
+    - Parking Space
+    
+    We redesigned Property details page to give higher priority to the important information. We also focused on the readability of the information. Wherever we used more technical terms we gave additional context. We also tried accommodating all the important details "above-the-fold" or "initial viewport.”
+<table align="center" border="1px" border-color="#dedede">
+  
+  <tr><td align="center">Rental Property Page Then</td><td align="center">Example Additional Context</td></tr>
+  <tr><td>
+  <img src="/images/posts/rent-details-page-then.jpeg" alt="Rental Property Page Then" align="center" width="200"/>
+  </td>
+  <td>
+  <img src="/images/posts/additional-context.png" alt="Example Additional Context" align="center" width="200"/>
+  </td></tr>
+</table>
+
+<table align="center" border="1px" border-color="#dedede">
+  <tr><td align="center"> Rental Property Page Now</td></tr>
+  <tr><td>
+  <img src="/images/posts/rent-details-page-now.png" alt="Rental Property Page Now" width="500"/>
+  </td></tr>
+  <tr>
+  <td>
+  <img src="/images/posts/rent-details-page-now1.png" alt="Rental Property Page Now" width="500"/>
+  </td></tr> 
+</table>
+
 ## Returning user Home page
 
 We started giving a differentiated experience for the returning users. One such change was giving more prominence to the continue search button over the new search box. 
