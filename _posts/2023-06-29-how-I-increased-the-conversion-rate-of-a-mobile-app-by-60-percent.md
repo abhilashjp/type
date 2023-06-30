@@ -62,7 +62,7 @@ We wanted to experiment with another hypothesis. Since users put in high efforts
 To our surprise Option 1 turned out to be the winner. Still we decided to go ahead with Option 2.
 
 
-<iframe width="315" 
+<iframe width="200" height="356"
 src="https://www.youtube.com/embed/g5kmohe1Hdc"
 title="YouTube video player"
 frameborder="0"
