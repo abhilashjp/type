@@ -156,10 +156,10 @@ We ran a survey among the users to understand all the things mattered to them wh
   
   <tr><td align="center">Rental Property Page Then</td><td align="center">Example Additional Context</td></tr>
   <tr><td>
-  <img src="/images/posts/rent-details-page-then.jpeg" alt="Rental Property Page Then" align="center" width="200"/>
+  <img src="/images/posts/rent-details-page-then.jpeg" alt="Rental Property Page Then" align="center" width="250"/>
   </td>
   <td>
-  <img src="/images/posts/additional-context.png" alt="Example Additional Context" align="center" width="200"/>
+  <img src="/images/posts/additional-context.png" alt="Example Additional Context" align="center" width="250"/>
   </td></tr>
 </table>
 
