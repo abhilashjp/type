@@ -69,6 +69,35 @@ frameborder="0"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 allowfullscreen></iframe>
 
+## Filter revamp
+
+When we analyzed the filter usage data, we found out that only ~60% of user applied atleast one filter during their apps lifetime. We also happened to compare the conversion rates of users who applied filters vs those who didn’t apply any filters. The difference in conversion rate was more than 50%. This would mean that if we can make additional 15%users to apply filters, this would give us a jump in overall conversion rates atleast by 5%. 
+
+Thus we set ourselves a goal to revisit the design of the filters and its user journey to improve the usage of filters. The changes primarily included the improvements in accessibility, usability, Information architecture and information overload.  By analyzing usage of each filter we came to conclusion that not  every filter needs equal priority, while some of them have high usage other are rarely used or used only by power users. Hence we grouped the filters under 3 categories, Basic filters, Most used filters and advanced filters. Basic filter included only the budget range and BHK preferences and we made it part of the profiling as described in the ‘Onboarding journey’ changes. We also brought it out of the filters section and gave it more prominence in the search listings page. The rest of the most used filters where sorted in the order of usages. The ones with less usages where moved to the ‘Advanced filters’ sections. 
+
+We made filters more accessible to the users. This is covered in detailed in the later part this article. We also did several usability improvements on the filters page.
+
+<table align="center" border="1px" border-color="#dedede">
+  
+  <tr><td align="center">Filters Page Then</td><td align="center">Budget Filter Now</td></tr>
+  <tr><td>
+  <img src="/images/posts/filters-page-then.png" alt="Filters page then" align="center" width="200"/>
+  </td>
+  <td>
+  <img src="/images/posts/SERP-Budget-selection.png" alt="Budget filter now" align="center" width="200"/>
+  </td></tr>
+</table>
+
+<table align="center" border="1px" border-color="#dedede">
+  <tr><td align="center"> Filters page now</td></tr>
+  <tr><td>
+  <img src="/images/posts/filters-page-now.png" alt="Filters page now" width="500"/>
+  </td></tr>
+  <tr>
+  <td>
+  <img src="/images/posts/filters-page-now-1.png" alt="Filters page now" width="500"/>
+  </td></tr> 
+</table>
 
 ## Filter history
 
