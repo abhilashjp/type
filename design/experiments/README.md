@@ -24,6 +24,22 @@ Judge structure, hierarchy and rhythm from these; judge the serif later.
 | 04 | `eqcfqFFGCOfOaSw5jEydG00tfIjgmFYzNLPFIsoD` | `Iso` appears verbatim; `FFG` and `OfO` are heavy and symmetric; `eq` opens it. Standards, grid, equality. | **Swiss.** Strict 12-column grid, grotesque only, flush left. Name set enormous and lowercase. Content as aligned rows. One red square as the only mark. |
 | 05 | `MCGK2eMU3WkNazJdmTTe5VBR1sF9KcPywcKlap7U` | Hard consonants throughout (`MCGK`, `TT`, `Klap`); digits are all primes or one. Percussive, singular. | **Specimen.** Each section is one enormous word — WORK, NOTES, TOOLS, MAIL — with the content set small beneath it. Black on white, nothing else. The one that sounds like it can't work. |
 
+## 06 — Nalukettu
+
+Not seeded. Built after all five above were rejected as bland, from the
+reference the owner pointed at (mengto.github.io/towers) and the four
+Three.js skills in MengTo/Skills that Towers was made from: `threejs-landscape`,
+`threejs-towers`, `threejs-weather`, `add-mouse-driven-orbit`. A Kerala
+nalukettu assembles behind a rising clip plane in a paddy field, bamboo
+scaffolding one stage ahead, Malayalam stage captions, four times of day.
+Type layer sits over the scene; the writing is below the fold in the quiet
+register. Three.js is vendored in `assets/` so it runs offline; no other
+dependencies. Verified here at 1.4M triangles in 27 draw calls.
+
+Known rough edges at this commit: the grove overlaps the masthead at the
+top left, the paddy is still busy behind the numeral, the small labels at
+right are hard to read on green, and the mukhappu gables are barely visible.
+
 Each directory holds `index.html`, the screenshots produced by
 `design/shot.sh`, and after review a `VERDICT.md` with the critic's output
 and one line on why it was kept or cut.
