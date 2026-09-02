@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abhilash John Philip</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #000000;
+    --ink-2: #6b6b6b;
+    --rule: #e2e2e2;
+    --red: #e2261c;
+    --sans: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body { margin: 0; color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.4; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: var(--red); }
+
+  .page { max-width: 1240px; margin: 0 auto; padding: 0 32px 80px; }
+  .grid { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; }
+
+  header.grid { padding: 26px 0; border-bottom: 1px solid var(--ink); align-items: baseline; }
+  header .sq { grid-column: 1 / 2; width: 12px; height: 12px; background: var(--red); display: block; }
+  header nav { grid-column: 9 / 13; display: flex; justify-content: space-between; font-size: 12.5px; letter-spacing: .02em; }
+  header nav a[aria-current] { border-bottom: 2px solid var(--ink); padding-bottom: 2px; }
+
+  .name { grid-column: 1 / 11; margin: 56px 0 0; font-size: clamp(64px, 9.4vw, 132px); line-height: .92; letter-spacing: -.045em; font-weight: 700; }
+  .name span { display: block; }
+  .role { grid-column: 1 / 6; margin: 34px 0 0; font-size: 20px; line-height: 1.3; }
+  .role-2 { grid-column: 7 / 12; margin: 34px 0 0; font-size: 15px; line-height: 1.45; color: var(--ink-2); }
+
+  .section { margin-top: 72px; }
+  .label { grid-column: 1 / 3; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); padding-top: 14px; border-top: 1px solid var(--ink); }
+  .rows { grid-column: 3 / 13; border-top: 1px solid var(--ink); }
+  .r { display: grid; grid-template-columns: 48px 1fr 130px 90px; column-gap: 24px; padding: 14px 0; border-bottom: 1px solid var(--rule); align-items: baseline; }
+  .r .i { font-size: 12px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+  .r h3 { margin: 0; font-size: 20px; font-weight: 500; letter-spacing: -.015em; line-height: 1.2; }
+  .r p { margin: 4px 0 0; font-size: 14px; color: var(--ink-2); max-width: 62ch; }
+  .r .d, .r .k { font-size: 12px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+  .r .k { text-align: right; }
+  .r .k .live { display: inline-block; width: 8px; height: 8px; background: var(--red); margin-right: 8px; vertical-align: 1px; }
+  .r.note h3 { font-size: 16px; font-weight: 400; }
+  .r.note p { display: none; }
+  .r.tool h3 { font-weight: 700; }
+
+  .sub { margin-top: 72px; }
+  .sub .label { border-top-color: var(--ink); }
+  .sub .body { grid-column: 3 / 9; border-top: 1px solid var(--ink); padding-top: 14px; }
+  .sub p { margin: 0 0 14px; font-size: 20px; line-height: 1.3; }
+  .sub form { display: flex; border-bottom: 1px solid var(--ink); }
+  .sub input { flex: 1; border: 0; font: inherit; font-size: 16px; padding: 8px 0; outline: none; }
+  .sub button { border: 0; background: transparent; font: inherit; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; cursor: pointer; }
+
+  footer.grid { margin-top: 72px; padding-top: 14px; border-top: 1px solid var(--ink); font-size: 12px; color: var(--ink-2); }
+  footer .l { grid-column: 1 / 5; }
+  footer .r2 { grid-column: 9 / 13; display: flex; justify-content: space-between; }
+  @media (max-width: 800px) {
+    .grid > * { grid-column: 1 / -1 !important; }
+    .r { grid-template-columns: 1fr; row-gap: 2px; }
+    .r .k { text-align: left; }
+    header nav { justify-content: flex-start; gap: 18px; margin-top: 10px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="grid">
+    <span class="sq" aria-hidden="true"></span>
+    <nav aria-label="Primary"><a href="/" aria-current="page">Index</a><a href="/essays">Essays</a><a href="/notes">Notes</a><a href="/tools">Tools</a><a href="/about">About</a></nav>
+  </header>
+
+  <div class="grid">
+    <h1 class="name"><span>abhilash</span><span>john philip</span></h1>
+    <p class="role">Staff Product Manager at Chargebee. I own the taxation product.</p>
+    <p class="role-2">Before that PayU, Housing.com and IndustryBuying. I write about product work, keep notes in public, and publish the AI tools I build.</p>
+  </div>
+
+  <section class="grid section" aria-label="Tools">
+    <div class="label">Tools</div>
+    <div class="rows">
+      <!-- sample -->
+      <article class="r tool"><span class="i">01</span><div><h3><a href="#">Nexus checker</a></h3><p>Paste the places you sell into. Get back where you probably have a filing obligation, and why.</p></div><span class="d">2026-08-30</span><span class="k"><span class="live"></span>Live</span></article>
+      <article class="r tool"><span class="i">02</span><div><h3><a href="#">PRD critic</a></h3><p>Paste a PRD. Get a structured read on what's missing, what's vague, and what a reviewer will ask first.</p></div><span class="d">2026-08-12</span><span class="k">Beta</span></article>
+      <article class="r tool"><span class="i">03</span><div><h3><a href="#">Changelog writer</a></h3><p>Commits in, release notes out. Written for the customer, not the engineer.</p></div><span class="d">2026-07-19</span><span class="k"><span class="live"></span>Live</span></article>
+    </div>
+  </section>
+
+  <section class="grid section" aria-label="Notes">
+    <div class="label">Notes</div>
+    <div class="rows">
+      <!-- sample -->
+      <article class="r note"><span class="i">01</span><div><h3><a href="#">Took the animated countryside off the about page. It had no job.</a></h3></div><span class="d">2026-08-21</span><span class="k"></span></article>
+      <article class="r note"><span class="i">02</span><div><h3><a href="#">Tax is a state machine, not a form. Most products get this wrong by starting from the form.</a></h3></div><span class="d">2026-08-04</span><span class="k"></span></article>
+      <article class="r note"><span class="i">03</span><div><h3><a href="#">Variety can't be asked for. It has to come from outside the model.</a></h3></div><span class="d">2026-07-02</span><span class="k"></span></article>
+    </div>
+  </section>
+
+  <section class="grid section" aria-label="Essays">
+    <div class="label">Essays</div>
+    <div class="rows">
+      <article class="r"><span class="i">01</span><div><h3><a href="#">How I increased the conversion rate of a mobile app by 60%</a></h3><p>Housing.com, 2018. I was new to mobile and assumed there was little room left. There was a lot.</p></div><span class="d">2023-06-29</span><span class="k">12 min</span></article>
+      <article class="r"><span class="i">02</span><div><h3><a href="#">Startup diaries: Saafair, air purifiers</a></h3><p>Winter 2015, North India. The purifiers were expensive and the parts weren't. So we built one.</p></div><span class="d">2023-05-05</span><span class="k"></span></article>
+      <article class="r"><span class="i">03</span><div><h3><a href="#">Notes on Web3</a></h3><p>A summary of Linda Xie's series on DeFi, NFTs and DAOs, written for a beginner by a beginner.</p></div><span class="d">2022-02-06</span><span class="k"></span></article>
+      <article class="r"><span class="i">04</span><div><h3><a href="#">Beyond hartals</a></h3><p>Ninety-seven days of hartals in Kerala in 2018. What it costs, and what could replace it.</p></div><span class="d">2019-01-05</span><span class="k"></span></article>
+      <article class="r"><span class="i">05</span><div><h3><a href="#">We're saving time for home seekers. Here's how.</a></h3><p>Hundreds of agent and owner conversations, and what we changed in rental search because of them.</p></div><span class="d">2018-12-23</span><span class="k"></span></article>
+      <article class="r"><span class="i">06</span><div><h3><a href="#">Co-owned property purchase</a></h3><p>A hackathon pitch for shared property purchases. We didn't win. The problem is still real.</p></div><span class="d">2018-02-22</span><span class="k"></span></article>
+      <article class="r"><span class="i">07</span><div><h3><a href="#">Doubling farmer income</a></h3><p>NITI Aayog wants to double farm income by 2022. It won't happen without fixing the post-harvest chain.</p></div><span class="d">2018-01-02</span><span class="k"></span></article>
+      <article class="r"><span class="i">08</span><div><h3><a href="#">Introduction to coupon management systems</a></h3><p>The first system I built at IndustryBuying. The layout of a coupon engine for e-commerce.</p></div><span class="d">2017-11-25</span><span class="k"></span></article>
+      <article class="r"><span class="i">09</span><div><h3><a href="#">Courier selection engine for e-commerce</a></h3><p>Rising logistics cost, many courier partners. A system that picks the right one per shipment.</p></div><span class="d">2017-11-08</span><span class="k"></span></article>
+    </div>
+  </section>
+
+  <section class="grid sub" aria-label="Subscribe">
+    <div class="label">Mail</div>
+    <div class="body">
+      <p>One email when something ships. Never more than one a month.</p>
+      <form onsubmit="return false"><input type="email" placeholder="you@example.com" aria-label="Email"><button type="submit">Subscribe</button></form>
+    </div>
+  </section>
+
+  <footer class="grid">
+    <span class="l">Bengaluru · abhilashjohn.com</span>
+    <span class="r2"><a href="#">RSS</a><a href="#">LinkedIn</a><a href="#">Twitter</a><a href="#">Email</a></span>
+  </footer>
+</div>
+</body>
+</html>

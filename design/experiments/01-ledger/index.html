@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abhilash John Philip</title>
+<style>
+  :root {
+    --paper: #f6f3ec;
+    --ink: #1c1b18;
+    --ink-2: #6a675f;
+    --rule: #d9d4c7;
+    --red: #a8362b;
+    --serif: Charter, "Bitstream Charter", "Iowan Old Style", Georgia, serif;
+    --mono: "SF Mono", Menlo, Consolas, "DejaVu Sans Mono", "Liberation Mono", monospace;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); }
+  body {
+    margin: 0; color: var(--ink); font-family: var(--serif);
+    font-size: 17px; line-height: 1.5; -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+  .page { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
+
+  /* running head */
+  .head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 28px 0 14px; border-bottom: 1px solid var(--ink);
+    font-family: var(--mono); font-size: 12px; letter-spacing: .04em;
+  }
+  .head .name { font-family: var(--serif); font-size: 17px; letter-spacing: 0; }
+  .head nav a { margin-left: 22px; color: var(--ink-2); }
+  .head nav a[aria-current] { color: var(--ink); }
+
+  .intro { padding: 36px 0 28px; max-width: 62ch; }
+  .intro p { margin: 0 0 12px; font-size: 19px; line-height: 1.45; }
+  .intro p + p { color: var(--ink-2); font-size: 17px; }
+
+  /* the ledger */
+  .ledger { border-top: 1px solid var(--ink); }
+  .ledger-head {
+    display: grid; grid-template-columns: 56px 96px 1fr 84px; gap: 16px;
+    font-family: var(--mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase;
+    color: var(--ink-2); padding: 10px 0; border-bottom: 1px solid var(--rule);
+  }
+  .entry {
+    display: grid; grid-template-columns: 56px 96px 1fr 84px; gap: 16px; align-items: baseline;
+    padding: 16px 0; border-bottom: 1px solid var(--rule); position: relative;
+  }
+  .entry::before {
+    content: ""; position: absolute; left: 60px; top: 0; bottom: 0; width: 1px; background: var(--red); opacity: .55;
+  }
+  .no, .date, .kind { font-family: var(--mono); font-size: 12px; color: var(--ink-2); }
+  .no { text-align: right; padding-right: 12px; font-variant-numeric: tabular-nums; }
+  .kind { text-align: right; letter-spacing: .06em; }
+  .kind.tool { color: var(--red); }
+  .body h3 { margin: 0 0 4px; font-size: 20px; font-weight: 500; line-height: 1.3; letter-spacing: -.005em; }
+  .body p { margin: 0; color: var(--ink-2); font-size: 15.5px; max-width: 58ch; }
+  .entry.note .body h3 { font-size: 16.5px; font-weight: 400; font-style: italic; }
+  .entry.note .body p { display: none; }
+  .body .status { font-family: var(--mono); font-size: 11px; margin-left: 8px; color: var(--ink-2); vertical-align: 2px; }
+
+  .sub {
+    margin-top: 48px; padding-top: 18px; border-top: 1px solid var(--ink);
+    display: grid; grid-template-columns: 56px 96px 1fr; gap: 16px; align-items: baseline;
+  }
+  .sub .label { font-family: var(--mono); font-size: 12px; color: var(--ink-2); grid-column: 2; }
+  .sub form { display: flex; gap: 0; max-width: 420px; border-bottom: 1px solid var(--ink); }
+  .sub input { flex: 1; border: 0; background: transparent; font: inherit; font-size: 16px; padding: 6px 0; outline: none; }
+  .sub button { border: 0; background: transparent; font-family: var(--mono); font-size: 12px; letter-spacing: .06em; cursor: pointer; color: var(--red); }
+  .sub p { grid-column: 3; margin: 6px 0 0; color: var(--ink-2); font-size: 14.5px; }
+
+  footer { margin-top: 56px; font-family: var(--mono); font-size: 12px; color: var(--ink-2); display: flex; gap: 22px; }
+  @media (max-width: 640px) {
+    .ledger-head { display: none; }
+    .entry { grid-template-columns: 1fr; gap: 4px; padding-left: 0; }
+    .entry::before { display: none; }
+    .no { display: none; }
+    .kind { text-align: left; }
+    .sub { grid-template-columns: 1fr; }
+    .sub .label, .sub p { grid-column: 1; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="head">
+    <a class="name" href="/">Abhilash John Philip</a>
+    <nav aria-label="Primary">
+      <a href="/" aria-current="page">All</a>
+      <a href="/essays">Essays</a>
+      <a href="/notes">Notes</a>
+      <a href="/tools">Tools</a>
+      <a href="/about">About</a>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <p>Staff Product Manager at Chargebee, where I own the taxation product. Before that PayU, Housing.com and IndustryBuying.</p>
+    <p>This is a running ledger of what I ship, what I write, and what I'm working out in public. Newest first.</p>
+  </section>
+
+  <section class="ledger" aria-label="Everything, newest first">
+    <div class="ledger-head"><span>No.</span><span>Date</span><span>Entry</span><span style="text-align:right">Kind</span></div>
+
+    <!-- sample -->
+    <article class="entry tool">
+      <span class="no">017</span><span class="date">2026-08-30</span>
+      <div class="body"><h3><a href="#">Nexus checker</a><span class="status">live</span></h3><p>Paste the places you sell into. Get back where you probably have a filing obligation, and why.</p></div>
+      <span class="kind tool">Tool</span>
+    </article>
+    <!-- sample -->
+    <article class="entry note">
+      <span class="no">016</span><span class="date">2026-08-21</span>
+      <div class="body"><h3><a href="#">Took the animated countryside off the about page. It had no job.</a></h3><p></p></div>
+      <span class="kind">Note</span>
+    </article>
+    <!-- sample -->
+    <article class="entry tool">
+      <span class="no">015</span><span class="date">2026-08-12</span>
+      <div class="body"><h3><a href="#">PRD critic</a><span class="status">beta</span></h3><p>Paste a PRD. Get a structured read on what's missing, what's vague, and what a reviewer will ask first.</p></div>
+      <span class="kind tool">Tool</span>
+    </article>
+    <!-- sample -->
+    <article class="entry note">
+      <span class="no">014</span><span class="date">2026-08-04</span>
+      <div class="body"><h3><a href="#">Tax is a state machine, not a form. Most products get this wrong by starting from the form.</a></h3><p></p></div>
+      <span class="kind">Note</span>
+    </article>
+    <!-- sample -->
+    <article class="entry tool">
+      <span class="no">013</span><span class="date">2026-07-19</span>
+      <div class="body"><h3><a href="#">Changelog writer</a><span class="status">live</span></h3><p>Commits in, release notes out. Written for the customer, not the engineer.</p></div>
+      <span class="kind tool">Tool</span>
+    </article>
+    <!-- sample -->
+    <article class="entry note">
+      <span class="no">012</span><span class="date">2026-07-02</span>
+      <div class="body"><h3><a href="#">Variety can't be asked for. It has to come from outside the model.</a></h3><p></p></div>
+      <span class="kind">Note</span>
+    </article>
+
+    <article class="entry">
+      <span class="no">011</span><span class="date">2023-06-29</span>
+      <div class="body"><h3><a href="#">How I increased the conversion rate of a mobile app by 60%</a></h3><p>Housing.com, 2018. I was new to mobile and assumed there was little room left. There was a lot.</p></div>
+      <span class="kind">Essay</span>
+    </article>
+    <article class="entry">
+      <span class="no">010</span><span class="date">2023-05-05</span>
+      <div class="body"><h3><a href="#">Startup diaries: Saafair, air purifiers</a></h3><p>Winter 2015, North India. The purifiers were expensive and the parts weren't. So we built one.</p></div>
+      <span class="kind">Essay</span>
+    </article>
+    <article class="entry">
+      <span class="no">009</span><span class="date">2022-02-06</span>
+      <div class="body"><h3><a href="#">Notes on Web3</a></h3><p>A summary of Linda Xie's series on DeFi, NFTs and DAOs, written for a beginner by a beginner.</p></div>
+      <span class="kind">Essay</span>
+    </article>
+    <article class="entry">
+      <span class="no">008</span><span class="date">2019-01-05</span>
+      <div class="body"><h3><a href="#">Beyond hartals</a></h3><p>Ninety-seven days of hartals in Kerala in 2018. What it costs, and what could replace it.</p></div>
+      <span class="kind">Essay</span>
+    </article>
+    <article class="entry">
+      <span class="no">007</span><span class="date">2018-12-23</span>
+      <div class="body"><h3><a href="#">We're saving time for home seekers. Here's how.</a></h3><p>Hundreds of agent and owner conversations, and what we changed in rental search because of them.</p></div>
+      <span class="kind">Essay</span>
+    </article>
+    <article class="entry">
+      <span class="no">006</span><span class="date">2018-02-22</span>
+      <div class="body"><h3><a href="#">Co-owned property purchase</a></h3><p>A hackathon pitch for shared property purchases. We didn't win. The problem is still real.</p></div>
+      <span class="kind">Essay</span>
+    </article>
+    <article class="entry">
+      <span class="no">005</span><span class="date">2018-01-02</span>
+      <div class="body"><h3><a href="#">Doubling farmer income</a></h3><p>NITI Aayog wants to double farm income by 2022. It won't happen without fixing the post-harvest chain.</p></div>
+      <span class="kind">Essay</span>
+    </article>
+    <article class="entry">
+      <span class="no">004</span><span class="date">2017-11-25</span>
+      <div class="body"><h3><a href="#">Introduction to coupon management systems</a></h3><p>The first system I built at IndustryBuying. The layout of a coupon engine for e-commerce.</p></div>
+      <span class="kind">Essay</span>
+    </article>
+    <article class="entry">
+      <span class="no">003</span><span class="date">2017-11-08</span>
+      <div class="body"><h3><a href="#">Courier selection engine for e-commerce</a></h3><p>Rising logistics cost, many courier partners. A system that picks the right one per shipment.</p></div>
+      <span class="kind">Essay</span>
+    </article>
+  </section>
+
+  <section class="sub" aria-label="Subscribe">
+    <span class="label">Mail</span>
+    <div>
+      <form onsubmit="return false"><input type="email" placeholder="you@example.com" aria-label="Email"><button type="submit">SUBSCRIBE →</button></form>
+      <p>One email when something ships. Never more than one a month.</p>
+    </div>
+  </section>
+
+  <footer>
+    <a href="#">RSS</a><a href="#">LinkedIn</a><a href="#">Twitter</a><a href="#">Email</a>
+  </footer>
+</div>
+</body>
+</html>

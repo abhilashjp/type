@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abhilash John Philip</title>
+<style>
+  :root {
+    --paper: #faf8f2;
+    --ink: #151412;
+    --ink-2: #5f5b52;
+    --rule: #cfc9ba;
+    --serif: Charter, "Bitstream Charter", "Iowan Old Style", Georgia, serif;
+    --sans: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); }
+  body { margin: 0; color: var(--ink); font-family: var(--serif); font-size: 16px; line-height: 1.45; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 0 28px 72px; }
+
+  .masthead { text-align: center; padding: 34px 0 0; }
+  .masthead .name { font-size: 54px; letter-spacing: -.02em; font-weight: 500; margin: 0; line-height: 1; }
+  .masthead .dateline {
+    margin: 14px 0 0; padding: 8px 0; border-top: 1px solid var(--ink); border-bottom: 3px double var(--ink);
+    display: flex; justify-content: space-between; font-family: var(--sans); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2);
+  }
+  .masthead nav a { margin: 0 12px; }
+  .masthead nav a[aria-current] { color: var(--ink); border-bottom: 1px solid var(--ink); }
+
+  .cols { display: grid; grid-template-columns: 220px 1fr 260px; gap: 0; margin-top: 26px; }
+  .col { padding: 0 22px; }
+  .col:first-child { padding-left: 0; border-right: 1px solid var(--rule); }
+  .col:last-child { padding-right: 0; border-left: 1px solid var(--rule); }
+
+  .kicker { font-family: var(--sans); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--ink); }
+
+  /* lead */
+  .lead h2 { font-size: 40px; line-height: 1.08; letter-spacing: -.015em; font-weight: 500; margin: 0 0 12px; }
+  .lead p { font-size: 18px; margin: 0 0 8px; max-width: 60ch; }
+  .lead .meta, .item .meta, .note .meta { font-family: var(--sans); font-size: 11.5px; color: var(--ink-2); letter-spacing: .02em; }
+
+  .standfirst { font-size: 17px; color: var(--ink-2); margin: 0 0 22px; padding-bottom: 18px; border-bottom: 1px solid var(--rule); max-width: 60ch; }
+
+  .items { column-count: 2; column-gap: 28px; column-rule: 1px solid var(--rule); margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--ink); }
+  .item { break-inside: avoid; margin: 0 0 20px; }
+  .item h3 { font-size: 20px; line-height: 1.2; font-weight: 500; margin: 0 0 4px; letter-spacing: -.005em; }
+  .item p { margin: 0 0 4px; font-size: 15px; color: var(--ink-2); }
+
+  .note { margin: 0 0 16px; padding-bottom: 14px; border-bottom: 1px solid var(--rule); font-size: 14.5px; line-height: 1.4; }
+  .note:last-child { border-bottom: 0; }
+  .note .meta { display: block; margin-bottom: 4px; }
+
+  .tool { margin: 0 0 18px; padding-bottom: 16px; border-bottom: 1px solid var(--rule); }
+  .tool h3 { font-size: 19px; font-weight: 500; margin: 0 0 4px; line-height: 1.2; }
+  .tool h3 span { font-family: var(--sans); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); margin-left: 8px; vertical-align: 3px; }
+  .tool p { margin: 0; font-size: 14.5px; color: var(--ink-2); }
+
+  .classified { margin-top: 26px; padding: 14px; border: 1px solid var(--ink); }
+  .classified h4 { margin: 0 0 6px; font-family: var(--sans); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
+  .classified p { margin: 0 0 10px; font-size: 14.5px; }
+  .classified form { display: flex; border-bottom: 1px solid var(--ink); }
+  .classified input { flex: 1; border: 0; background: transparent; font: inherit; font-size: 15px; padding: 4px 0; outline: none; }
+  .classified button { border: 0; background: transparent; font-family: var(--sans); font-size: 11px; letter-spacing: .08em; cursor: pointer; }
+
+  footer { margin-top: 40px; padding-top: 10px; border-top: 3px double var(--ink); font-family: var(--sans); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); display: flex; gap: 22px; justify-content: center; }
+  @media (max-width: 900px) {
+    .cols { grid-template-columns: 1fr; }
+    .col { padding: 0; border: 0 !important; margin-bottom: 28px; }
+    .items { column-count: 1; }
+    .masthead .name { font-size: 38px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="masthead">
+    <h1 class="name">Abhilash John Philip</h1>
+    <div class="dateline">
+      <span>Product · Notes · Tools</span>
+      <nav aria-label="Primary"><a href="/" aria-current="page">Front</a><a href="/essays">Essays</a><a href="/notes">Notes</a><a href="/tools">Tools</a><a href="/about">About</a></nav>
+      <span>Bengaluru</span>
+    </div>
+  </header>
+
+  <div class="cols">
+    <aside class="col" aria-label="Notes">
+      <p class="kicker">Notes</p>
+      <!-- sample -->
+      <div class="note"><span class="meta">21 Aug 2026</span>Took the animated countryside off the about page. It had no job.</div>
+      <div class="note"><span class="meta">4 Aug 2026</span>Tax is a state machine, not a form. Most products get this wrong by starting from the form.</div>
+      <div class="note"><span class="meta">2 Jul 2026</span>Variety can't be asked for. It has to come from outside the model.</div>
+      <div class="note"><span class="meta">14 Jun 2026</span>The best PRDs I've read were shorter than their appendix.</div>
+    </aside>
+
+    <main class="col">
+      <p class="standfirst">Staff Product Manager at Chargebee, where I own the taxation product. Before that PayU, Housing.com and IndustryBuying. I write about product work and publish the tools I build along the way.</p>
+
+      <article class="lead">
+        <h2><a href="#">How I increased the conversion rate of a mobile app by 60%</a></h2>
+        <p>Housing.com, 2018. I was new to mobile apps and assumed the features were on par with the mobile web, so there'd be little room to improve. There was a lot.</p>
+        <span class="meta">Essay · 29 June 2023 · 12 min</span>
+      </article>
+
+      <div class="items">
+        <article class="item"><h3><a href="#">Startup diaries: Saafair, air purifiers</a></h3><p>Winter 2015, North India. The purifiers were expensive and the parts weren't. So we built one.</p><span class="meta">5 May 2023</span></article>
+        <article class="item"><h3><a href="#">Notes on Web3</a></h3><p>Linda Xie's series on DeFi, NFTs and DAOs, summarised for a beginner by a beginner.</p><span class="meta">6 Feb 2022</span></article>
+        <article class="item"><h3><a href="#">Beyond hartals</a></h3><p>Ninety-seven days of hartals in Kerala in 2018. What it costs, and what could replace it.</p><span class="meta">5 Jan 2019</span></article>
+        <article class="item"><h3><a href="#">We're saving time for home seekers</a></h3><p>Hundreds of agent and owner conversations, and what we changed in rental search because of them.</p><span class="meta">23 Dec 2018</span></article>
+        <article class="item"><h3><a href="#">Co-owned property purchase</a></h3><p>A hackathon pitch for shared property purchases. We didn't win. The problem is still real.</p><span class="meta">22 Feb 2018</span></article>
+        <article class="item"><h3><a href="#">Doubling farmer income</a></h3><p>NITI Aayog wants to double farm income by 2022. It won't happen without fixing the post-harvest chain.</p><span class="meta">2 Jan 2018</span></article>
+        <article class="item"><h3><a href="#">Introduction to coupon management systems</a></h3><p>The first system I built at IndustryBuying. The layout of a coupon engine for e-commerce.</p><span class="meta">25 Nov 2017</span></article>
+        <article class="item"><h3><a href="#">Courier selection engine for e-commerce</a></h3><p>Rising logistics cost, many courier partners. A system that picks the right one per shipment.</p><span class="meta">8 Nov 2017</span></article>
+      </div>
+    </main>
+
+    <aside class="col" aria-label="Tools">
+      <p class="kicker">Tools</p>
+      <!-- sample -->
+      <article class="tool"><h3><a href="#">Nexus checker</a><span>Live</span></h3><p>Paste the places you sell into. Get back where you probably have a filing obligation, and why.</p></article>
+      <article class="tool"><h3><a href="#">PRD critic</a><span>Beta</span></h3><p>Paste a PRD. Get a structured read on what's missing, what's vague, and what a reviewer will ask first.</p></article>
+      <article class="tool"><h3><a href="#">Changelog writer</a><span>Live</span></h3><p>Commits in, release notes out. Written for the customer, not the engineer.</p></article>
+
+      <div class="classified">
+        <h4>Subscriptions</h4>
+        <p>One email when something ships. Never more than one a month.</p>
+        <form onsubmit="return false"><input type="email" placeholder="you@example.com" aria-label="Email"><button type="submit">SUBSCRIBE</button></form>
+      </div>
+    </aside>
+  </div>
+
+  <footer><a href="#">RSS</a><a href="#">LinkedIn</a><a href="#">Twitter</a><a href="#">Email</a></footer>
+</div>
+</body>
+</html>

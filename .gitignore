@@ -4,3 +4,6 @@ _site
 _drafts
 .DS_Store
 .jekyll-metadata
+# design references are other people's work; keep local
+design/references/*.png
+node_modules

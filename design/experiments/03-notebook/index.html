@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abhilash John Philip</title>
+<style>
+  :root {
+    --paper: #fbf9f4;
+    --ink: #1f1d1a;
+    --pencil: #7a766d;
+    --rule: #e3ded2;
+    --red: #b8402f;
+    --serif: Charter, "Bitstream Charter", "Iowan Old Style", Georgia, serif;
+    --sans: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--paper); }
+  body { margin: 0; color: var(--ink); font-family: var(--serif); font-size: 18px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+  .page { max-width: 1040px; margin: 0 auto; padding: 0 32px 80px; }
+  .row { display: grid; grid-template-columns: minmax(0, 60ch) 1fr; column-gap: 56px; }
+
+  header.row { padding: 30px 0 22px; border-bottom: 1px solid var(--ink); align-items: baseline; }
+  header .name { font-size: 18px; font-weight: 500; }
+  header nav { font-family: var(--sans); font-size: 12.5px; letter-spacing: .03em; }
+  header nav a { margin-right: 18px; color: var(--pencil); }
+  header nav a[aria-current] { color: var(--red); }
+
+  .intro.row { padding: 40px 0 26px; }
+  .intro p { margin: 0 0 12px; font-size: 21px; line-height: 1.4; }
+  .side { font-family: var(--sans); font-size: 12.5px; line-height: 1.5; color: var(--pencil); padding-top: 6px; }
+  .side .n { color: var(--red); font-variant-numeric: tabular-nums; margin-right: 6px; }
+  .side p { margin: 0 0 10px; }
+
+  .entry.row { padding: 24px 0; border-top: 1px solid var(--rule); align-items: start; }
+  .entry h3 { margin: 0 0 6px; font-size: 24px; line-height: 1.22; font-weight: 500; letter-spacing: -.01em; }
+  .entry .main p { margin: 0; color: #46433c; font-size: 17px; max-width: 58ch; }
+  .entry.note .main p { color: var(--ink); font-size: 18px; }
+  .entry.note h3 { display: none; }
+  .entry.tool h3 { font-size: 22px; }
+  .entry.tool .main p { color: #46433c; }
+
+  .sub.row { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--ink); }
+  .sub form { display: flex; border-bottom: 1px solid var(--ink); max-width: 46ch; }
+  .sub input { flex: 1; border: 0; background: transparent; font: inherit; font-size: 17px; padding: 6px 0; outline: none; }
+  .sub button { border: 0; background: transparent; font-family: var(--sans); font-size: 12px; letter-spacing: .06em; color: var(--red); cursor: pointer; }
+  .sub .main p { margin: 0 0 10px; font-size: 18px; }
+
+  footer { margin-top: 48px; font-family: var(--sans); font-size: 12.5px; color: var(--pencil); display: flex; gap: 20px; }
+  @media (max-width: 760px) {
+    .row { grid-template-columns: 1fr; row-gap: 8px; }
+    .side { padding-top: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="row">
+    <a class="name" href="/">Abhilash John Philip</a>
+    <nav aria-label="Primary"><a href="/" aria-current="page">Notebook</a><a href="/essays">Essays</a><a href="/notes">Notes</a><a href="/tools">Tools</a><a href="/about">About</a></nav>
+  </header>
+
+  <section class="intro row">
+    <div>
+      <p>I'm a Staff Product Manager at Chargebee, where I own the taxation product. Before that PayU, Housing.com and IndustryBuying.</p>
+      <p>This is the notebook. Essays, short notes, and the AI tools I build get written down here as they happen. The margin carries the dates and the connections.</p>
+    </div>
+    <aside class="side">
+      <p><span class="n">a</span>Previously co-founded Hedcet, acqui-hired by Clairvolex.</p>
+      <p><span class="n">b</span>Newest entries first. Tools are marked with their status.</p>
+    </aside>
+  </section>
+
+  <!-- sample -->
+  <article class="entry row tool">
+    <div class="main"><h3><a href="#">Nexus checker</a></h3><p>Paste the places you sell into. Get back where you probably have a filing obligation, and why.</p></div>
+    <aside class="side"><p><span class="n">1</span>Tool · Live<br>30 Aug 2026</p><p>Built because every customer conversation about tax starts with "where do we owe?"</p></aside>
+  </article>
+  <!-- sample -->
+  <article class="entry row note">
+    <div class="main"><h3>Note</h3><p>Took the animated countryside off the about page. It had no job.</p></div>
+    <aside class="side"><p><span class="n">2</span>Note<br>21 Aug 2026</p></aside>
+  </article>
+  <!-- sample -->
+  <article class="entry row tool">
+    <div class="main"><h3><a href="#">PRD critic</a></h3><p>Paste a PRD. Get a structured read on what's missing, what's vague, and what a reviewer will ask first.</p></div>
+    <aside class="side"><p><span class="n">3</span>Tool · Beta<br>12 Aug 2026</p></aside>
+  </article>
+  <!-- sample -->
+  <article class="entry row note">
+    <div class="main"><h3>Note</h3><p>Tax is a state machine, not a form. Most products get this wrong by starting from the form.</p></div>
+    <aside class="side"><p><span class="n">4</span>Note<br>4 Aug 2026</p><p>See also: <a href="#">Nexus checker</a></p></aside>
+  </article>
+  <!-- sample -->
+  <article class="entry row tool">
+    <div class="main"><h3><a href="#">Changelog writer</a></h3><p>Commits in, release notes out. Written for the customer, not the engineer.</p></div>
+    <aside class="side"><p><span class="n">5</span>Tool · Live<br>19 Jul 2026</p></aside>
+  </article>
+  <!-- sample -->
+  <article class="entry row note">
+    <div class="main"><h3>Note</h3><p>Variety can't be asked for. It has to come from outside the model.</p></div>
+    <aside class="side"><p><span class="n">6</span>Note<br>2 Jul 2026</p><p>After Anshu Chimala's piece in Lenny's Newsletter.</p></aside>
+  </article>
+
+  <article class="entry row">
+    <div class="main"><h3><a href="#">How I increased the conversion rate of a mobile app by 60%</a></h3><p>Housing.com, 2018. I was new to mobile and assumed there was little room left. There was a lot.</p></div>
+    <aside class="side"><p><span class="n">7</span>Essay · 12 min<br>29 Jun 2023</p><p>Thumb-zone mapping, returning-user home, the filters page then and now.</p></aside>
+  </article>
+  <article class="entry row">
+    <div class="main"><h3><a href="#">Startup diaries: Saafair, air purifiers</a></h3><p>Winter 2015, North India. The purifiers were expensive and the parts weren't. So we built one.</p></div>
+    <aside class="side"><p><span class="n">8</span>Essay<br>5 May 2023</p></aside>
+  </article>
+  <article class="entry row">
+    <div class="main"><h3><a href="#">Notes on Web3</a></h3><p>A summary of Linda Xie's series on DeFi, NFTs and DAOs, written for a beginner by a beginner.</p></div>
+    <aside class="side"><p><span class="n">9</span>Essay<br>6 Feb 2022</p></aside>
+  </article>
+  <article class="entry row">
+    <div class="main"><h3><a href="#">Beyond hartals</a></h3><p>Ninety-seven days of hartals in Kerala in 2018. What it costs, and what could replace it.</p></div>
+    <aside class="side"><p><span class="n">10</span>Essay<br>5 Jan 2019</p></aside>
+  </article>
+  <article class="entry row">
+    <div class="main"><h3><a href="#">We're saving time for home seekers. Here's how.</a></h3><p>Hundreds of agent and owner conversations, and what we changed in rental search because of them.</p></div>
+    <aside class="side"><p><span class="n">11</span>Essay<br>23 Dec 2018</p></aside>
+  </article>
+  <article class="entry row">
+    <div class="main"><h3><a href="#">Co-owned property purchase</a></h3><p>A hackathon pitch for shared property purchases. We didn't win. The problem is still real.</p></div>
+    <aside class="side"><p><span class="n">12</span>Essay<br>22 Feb 2018</p></aside>
+  </article>
+  <article class="entry row">
+    <div class="main"><h3><a href="#">Doubling farmer income</a></h3><p>NITI Aayog wants to double farm income by 2022. It won't happen without fixing the post-harvest chain.</p></div>
+    <aside class="side"><p><span class="n">13</span>Essay<br>2 Jan 2018</p></aside>
+  </article>
+  <article class="entry row">
+    <div class="main"><h3><a href="#">Introduction to coupon management systems</a></h3><p>The first system I built at IndustryBuying. The layout of a coupon engine for e-commerce.</p></div>
+    <aside class="side"><p><span class="n">14</span>Essay<br>25 Nov 2017</p></aside>
+  </article>
+  <article class="entry row">
+    <div class="main"><h3><a href="#">Courier selection engine for e-commerce</a></h3><p>Rising logistics cost, many courier partners. A system that picks the right one per shipment.</p></div>
+    <aside class="side"><p><span class="n">15</span>Essay<br>8 Nov 2017</p></aside>
+  </article>
+
+  <section class="sub row" aria-label="Subscribe">
+    <div class="main">
+      <p>One email when something ships. Never more than one a month.</p>
+      <form onsubmit="return false"><input type="email" placeholder="you@example.com" aria-label="Email"><button type="submit">SUBSCRIBE →</button></form>
+    </div>
+    <aside class="side"><p><span class="n">16</span>Or the <a href="#">RSS feed</a>, which gets everything.</p></aside>
+  </section>
+
+  <footer><a href="#">RSS</a><a href="#">LinkedIn</a><a href="#">Twitter</a><a href="#">Email</a></footer>
+</div>
+</body>
+</html>
