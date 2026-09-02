@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Abhilash John Philip</title>
+<style>
+:root{
+  --paper:#ece7db; --ink:#1f1c17; --ink2:#78705f; --accent:#9b3d24; --hair:rgba(31,28,23,.22);
+  --sans:"Helvetica Neue",Helvetica,Arial,"Liberation Sans",system-ui,sans-serif;
+  --serif:Charter,"Bitstream Charter","Iowan Old Style",Palatino,Georgia,"Liberation Serif",serif;
+  --mono:"SF Mono",Menlo,Consolas,"DejaVu Sans Mono","Liberation Mono",monospace;
+  --col:52ch; --gutter:32px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:var(--paper);scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* the object lives behind everything */
+#stage{position:fixed;inset:0;width:100%;height:100%;display:block;z-index:0}
+/* container lines: the column's edges, drawn */
+.lines{position:fixed;inset:0;pointer-events:none;z-index:1}
+.lines i{position:absolute;top:0;bottom:0;width:1px;background:var(--hair)}
+.lines i::before{content:"";position:absolute;top:64px;left:-2px;width:5px;height:5px;background:var(--ink)}
+.lines i:nth-child(1){left:var(--gutter)}
+.lines i:nth-child(2){left:calc(var(--gutter) + var(--col))}
+
+header{position:fixed;left:0;right:0;top:0;height:58px;padding:0 var(--gutter);display:flex;align-items:center;gap:28px;
+  border-bottom:1px solid var(--hair);background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(6px);z-index:3}
+.brand{font-size:16px;white-space:nowrap}
+.spacer{margin-left:auto}
+nav{display:flex;gap:22px}
+nav a{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2)}
+nav a:hover{color:var(--accent)}
+
+main{position:relative;z-index:2;padding:132px var(--gutter) 96px;width:calc(var(--col) + var(--gutter)*2)}
+.stand{font-size:21px;line-height:1.42;max-width:var(--col);margin-bottom:14px}
+.legend{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);margin-bottom:56px}
+
+.river{list-style:none;border-top:1px solid var(--ink)}
+.river li{position:relative;display:grid;grid-template-columns:32px 1fr;column-gap:20px;padding:20px 0 20px 14px;margin-left:-14px;border-bottom:1px solid var(--hair);
+  border-left:2px solid transparent;transition:border-color .25s}
+.river li.cur{border-left-color:var(--accent)}
+.river .n{font-family:var(--mono);font-size:11px;color:var(--ink2);padding-top:6px;font-variant-numeric:tabular-nums}
+.river h3{font-size:22px;font-weight:400;line-height:1.25;letter-spacing:-.005em}
+.river li.note h3{font-size:18px;font-style:italic}
+.river p{font-size:15px;color:var(--ink2);margin-top:5px;max-width:48ch}
+.river .m{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink2);margin-top:9px;display:flex;gap:14px}
+.river li.tool .m b{color:var(--accent);font-weight:400}
+.river .m b{font-weight:400}
+
+.sub{margin-top:56px;padding-top:22px;border-top:1px solid var(--ink);max-width:var(--col)}
+.sub p{font-size:17px;margin-bottom:12px}
+.sub form{display:flex;border-bottom:1px solid var(--ink)}
+.sub input{flex:1;border:0;background:transparent;font:inherit;font-size:16px;padding:6px 0;outline:none;color:var(--ink)}
+.sub button{border:0;background:transparent;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--accent);cursor:pointer}
+footer{position:relative;z-index:2;padding:0 var(--gutter) 48px;display:flex;gap:24px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2)}
+
+/* the object's own labels: projected from the scene */
+.tag{position:fixed;z-index:2;pointer-events:none;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2);
+  white-space:nowrap;transition:opacity .3s;opacity:0}
+.tag.on{opacity:1}
+.tag::before{content:"";position:absolute;left:-18px;top:50%;width:12px;height:1px;background:var(--ink2)}
+
+/* a tool, opened as a surface */
+.surface{position:fixed;z-index:2;width:340px;background:#f7f3e8;border:1px solid var(--hair);box-shadow:0 1px 0 rgba(31,28,23,.06),0 12px 30px -18px rgba(31,28,23,.35);
+  padding:14px 16px 16px;opacity:0;transform:translateY(6px);transition:opacity .28s,transform .28s;pointer-events:none}
+.surface.on{opacity:1;transform:none;pointer-events:auto}
+.surface .k,.inline .k{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);display:flex;justify-content:space-between}
+.surface .k span,.inline .k span{color:var(--ink2)}
+.surface h4{font-size:18px;font-weight:400;margin:6px 0 10px}
+.surface .in,.inline .in{font-family:var(--mono);font-size:12px;line-height:1.5;padding:8px 10px;border:1px solid var(--hair);background:var(--paper);white-space:pre-wrap}
+.surface .out,.inline .out{font-family:var(--mono);font-size:12px;line-height:1.55;margin-top:8px;white-space:pre-wrap;color:var(--ink)}
+.surface .out em,.inline .out em{font-style:normal;color:var(--accent)}
+.surface .go,.inline .go{margin-top:10px;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+
+@media (max-width:820px){
+  :root{--gutter:18px;--col:100%}
+  .lines i:nth-child(2){display:none}
+  header{padding:0 18px;gap:14px}
+  nav{gap:14px}
+  #stage{position:absolute;top:58px;height:44vh}
+  main{width:100%;padding-top:calc(44vh + 72px);padding-right:18px}
+  .stand{font-size:18px;max-width:none}
+  .river h3{font-size:19px}
+  .surface{display:none}
+  .river li .inline{margin-top:14px;padding:12px 14px 14px;border:1px solid var(--hair);background:#f7f3e8}
+  .river li .inline .in{margin-top:8px}
+  .tag{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<canvas id="stage" aria-hidden="true"></canvas>
+<div class="lines" aria-hidden="true"><i></i><i></i></div>
+
+<header>
+  <a class="brand" href="/">Abhilash John Philip</a>
+  <div class="spacer"></div>
+  <nav aria-label="Primary"><a href="/essays">Essays</a><a href="/notes">Notes</a><a href="/tools">Tools</a><a href="/about">About</a></nav>
+</header>
+
+<main>
+  <p class="stand">Product manager. I own taxation at Chargebee. Essays about the work, notes kept in public, and small AI tools, newest first.</p>
+  <p class="legend">15 entries · 2017–2026 · stacked to length</p>
+
+  <ol class="river" id="river">
+    <!-- sample tools and notes stand in for collections that don't exist yet -->
+    <li class="tool" data-i="14" data-tool="nexus"><span class="n">01</span><div><h3><a href="#">Nexus checker</a></h3><p>Paste the places you sell into. Get back where you probably have a filing obligation, and why.</p><div class="m"><span>2026-08-30</span><b>Tool · live</b></div></div></li>
+    <li class="note" data-i="13"><span class="n">02</span><div><h3><a href="#">Took the animated countryside off the about page. It had no job.</a></h3><div class="m"><span>2026-08-21</span><b>Note</b></div></div></li>
+    <li class="tool" data-i="12" data-tool="prd"><span class="n">03</span><div><h3><a href="#">PRD critic</a></h3><p>Paste a PRD. Get a structured read on what's missing, what's vague, and what a reviewer will ask first.</p><div class="m"><span>2026-08-12</span><b>Tool · beta</b></div></div></li>
+    <li class="note" data-i="11"><span class="n">04</span><div><h3><a href="#">Tax is a state machine, not a form. Most products get this wrong by starting from the form.</a></h3><div class="m"><span>2026-08-04</span><b>Note</b></div></div></li>
+    <li class="tool" data-i="10" data-tool="changelog"><span class="n">05</span><div><h3><a href="#">Changelog writer</a></h3><p>Commits in, release notes out. Written for the customer, not the engineer.</p><div class="m"><span>2026-07-19</span><b>Tool · live</b></div></div></li>
+    <li class="note" data-i="9"><span class="n">06</span><div><h3><a href="#">Variety can't be asked for. It has to come from outside the model.</a></h3><div class="m"><span>2026-07-02</span><b>Note</b></div></div></li>
+    <li data-i="8"><span class="n">07</span><div><h3><a href="#">How I increased the conversion rate of a mobile app by 60%</a></h3><p>Housing.com, 2018. I was new to mobile and assumed there was little room left. There was a lot.</p><div class="m"><span>2023-06-29</span><b>Essay</b><span>1,452 words</span></div></div></li>
+    <li data-i="7"><span class="n">08</span><div><h3><a href="#">Startup diaries: Saafair, air purifiers</a></h3><p>Winter 2015, North India. The purifiers were expensive and the parts weren't. So we built one.</p><div class="m"><span>2023-05-05</span><b>Essay</b><span>664 words</span></div></div></li>
+    <li data-i="6"><span class="n">09</span><div><h3><a href="#">Notes on Web3</a></h3><p>A summary of Linda Xie's series on DeFi, NFTs and DAOs, written for a beginner by a beginner.</p><div class="m"><span>2022-02-06</span><b>Essay</b><span>667 words</span></div></div></li>
+    <li data-i="5"><span class="n">10</span><div><h3><a href="#">Beyond hartals</a></h3><p>Ninety-seven days of hartals in Kerala in 2018. What it costs, and what could replace it.</p><div class="m"><span>2019-01-05</span><b>Essay</b><span>382 words</span></div></div></li>
+    <li data-i="4"><span class="n">11</span><div><h3><a href="#">We're saving time for home seekers. Here's how.</a></h3><p>Hundreds of agent and owner conversations, and what we changed in rental search because of them.</p><div class="m"><span>2018-12-23</span><b>Essay</b><span>569 words</span></div></div></li>
+    <li data-i="3"><span class="n">12</span><div><h3><a href="#">Co-owned property purchase</a></h3><p>A hackathon pitch for shared property purchases. We didn't win. The problem is still real.</p><div class="m"><span>2018-02-22</span><b>Essay</b><span>68 words + deck</span></div></div></li>
+    <li data-i="2"><span class="n">13</span><div><h3><a href="#">Doubling farmer income</a></h3><p>NITI Aayog wants to double farm income by 2022. It won't happen without fixing the post-harvest chain.</p><div class="m"><span>2018-01-02</span><b>Essay</b><span>345 words</span></div></div></li>
+    <li data-i="1"><span class="n">14</span><div><h3><a href="#">Introduction to coupon management systems</a></h3><p>The first system I built at IndustryBuying. The layout of a coupon engine for e-commerce.</p><div class="m"><span>2017-11-25</span><b>Essay</b><span>2,002 words</span></div></div></li>
+    <li data-i="0"><span class="n">15</span><div><h3><a href="#">Courier selection engine for e-commerce</a></h3><p>Rising logistics cost, many courier partners. A system that picks the right one per shipment.</p><div class="m"><span>2017-11-08</span><b>Essay</b><span>1,072 words</span></div></div></li>
+  </ol>
+
+  <div class="sub">
+    <p>One email when something ships. Never more than one a month.</p>
+    <form onsubmit="return false"><input type="email" placeholder="you@example.com" aria-label="Email"><button type="submit">SUBSCRIBE →</button></form>
+  </div>
+</main>
+<footer><a href="#">RSS</a><a href="#">LinkedIn</a><a href="#">Twitter</a><a href="#">Email</a></footer>
+
+<div class="tag" id="tag" aria-hidden="true"></div>
+<aside class="surface" id="surface" aria-live="polite"></aside>
+
+<script src="assets/three.min.js"></script>
+<script>
+(function(){
+"use strict";
+const T=THREE;
+/* ---------- the entries, oldest first: this is the stack, bottom to top ---------- */
+const E=[
+ {k:'essay',w:1072,d:'2017-11-08'},{k:'essay',w:2002,d:'2017-11-25'},{k:'essay',w:345,d:'2018-01-02'},{k:'essay',w:68,d:'2018-02-22'},
+ {k:'essay',w:569,d:'2018-12-23'},{k:'essay',w:382,d:'2019-01-05'},{k:'essay',w:667,d:'2022-02-06'},{k:'essay',w:664,d:'2023-05-05'},
+ {k:'essay',w:1452,d:'2023-06-29'},{k:'note',w:30,d:'2026-07-02'},{k:'tool',w:320,d:'2026-07-19'},{k:'note',w:30,d:'2026-08-04'},
+ {k:'tool',w:320,d:'2026-08-12'},{k:'note',w:30,d:'2026-08-21'},{k:'tool',w:320,d:'2026-08-30'}
+];
+const TH={essay:0.50,tool:0.50,note:0.22}, DP={essay:3.0,tool:3.0,note:2.2};
+const len=w=>Math.max(1.0,Math.min(13,0.8+w/165));
+const SAMPLES={
+ nexus:{title:'Nexus checker',status:'live',inp:'We sell to customers in:\nCalifornia, Texas, Germany, Kerala',
+   out:'<em>California</em>  likely · economic nexus, $500k threshold\n<em>Texas</em>       likely · $500k threshold, no local rates\n<em>Germany</em>     yes · VAT registration, OSS if EU-wide\n<em>Kerala</em>      yes · GST, place of supply = customer'},
+ prd:{title:'PRD critic',status:'beta',inp:'PRD: Multi-entity tax reporting (draft 2)\n2,140 words · 4 sections',
+   out:'3 gaps a reviewer will hit first:\n<em>1</em>  no owner for the rollout past pilot\n<em>2</em>  "real-time" is used 6× and defined 0×\n<em>3</em>  no failure mode when a rate is missing'},
+ changelog:{title:'Changelog writer',status:'live',inp:'12 commits · 2026-07-12 → 2026-07-19\nbranch: tax/rates-refresh',
+   out:'<em>Tax rates now refresh nightly.</em> Rates for 41\ncountries update without a support ticket.\nIf a rate can\'t be fetched, yesterday\'s stays\nin place and you\'re told which one.'}
+};
+
+/* ---------- scene ---------- */
+const PAPER=0xece7db;
+const cvs=document.getElementById('stage');
+const renderer=new T.WebGLRenderer({canvas:cvs,antialias:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio||1,2));
+renderer.shadowMap.enabled=true;renderer.shadowMap.type=T.PCFSoftShadowMap;
+const scene=new T.Scene();scene.background=new T.Color(PAPER);
+const camera=new T.PerspectiveCamera(17,1,0.5,600);
+const key=new T.DirectionalLight(0xfff8ee,1.35);key.position.set(-18,34,22);key.castShadow=true;
+key.shadow.mapSize.set(2048,2048);key.shadow.camera.near=1;key.shadow.camera.far=120;
+key.shadow.camera.left=-16;key.shadow.camera.right=16;key.shadow.camera.top=16;key.shadow.camera.bottom=-6;key.shadow.bias=-0.0012;
+scene.add(key,key.target);
+scene.add(new T.HemisphereLight(0xfff6e6,0x8a7f6a,0.55));
+scene.add(new T.AmbientLight(0xfff3e0,0.12));
+const ground=new T.Mesh(new T.PlaneGeometry(600,600),new T.ShadowMaterial({opacity:0.16}));
+ground.rotation.x=-Math.PI/2;ground.receiveShadow=true;scene.add(ground);
+
+const COL={essay:0xd2c9b2,tool:0x9c4b34,note:0x4a3627};
+const ACC=new T.Color(0x9b3d24);
+const slabs=[];let y=0;
+E.forEach((e,i)=>{
+  const L=len(e.w),h=TH[e.k],d=DP[e.k];
+  const jx=(((i*7919)%13)/13-0.5)*0.6, jz=(((i*104729)%7)/7-0.5)*0.25;
+  const geo=new T.BoxGeometry(L,h,d);
+  const mat=new T.MeshLambertMaterial({color:COL[e.k]});
+  const m=new T.Mesh(geo,mat);m.castShadow=true;m.receiveShadow=true;
+  m.userData={i,yRest:y+h/2,x:jx,z:jz,lift:0,liftT:0,k:e.k,L};
+  m.position.set(jx,y+h/2,jz);
+  scene.add(m);slabs.push(m);y+=h;
+});
+const STACK_H=y;
+
+/* ---------- camera: descends the stack as the river is read ---------- */
+let tgtY=STACK_H-0.4,curY=tgtY,curIdx=E.length-1;
+let narrow=false;
+function place(){
+  const az=narrow?0.78:0.62, el=narrow?0.20:0.17, D=narrow?58:54, shift=narrow?0.0:4.4;
+  const ce=Math.cos(el),se=Math.sin(el);
+  const pos=new T.Vector3(D*ce*Math.sin(az),(narrow?STACK_H*0.45:curY)+D*se,D*ce*Math.cos(az));
+  const cy=narrow?STACK_H*0.45:curY;
+  const look=new T.Vector3(0,cy,0);
+  const fwd=look.clone().sub(pos).normalize(), right=new T.Vector3().crossVectors(fwd,new T.Vector3(0,1,0)).normalize();
+  pos.addScaledVector(right,-shift);look.addScaledVector(right,-shift);
+  camera.position.copy(pos);camera.lookAt(look);
+  camera.fov=narrow?22:17;camera.updateProjectionMatrix();
+}
+function layout(){narrow=innerWidth<=820;const w=innerWidth,h=narrow?Math.round(innerHeight*0.44):innerHeight;renderer.setSize(w,h,false);camera.aspect=w/h;place();}
+addEventListener('resize',layout);
+
+/* ---------- the reading line ---------- */
+const rows=[...document.querySelectorAll('#river li')];
+const tag=document.getElementById('tag'),surf=document.getElementById('surface');
+let curTool=null;
+function readingLine(){
+  const line=innerHeight*0.42;let best=null,bd=1e9;
+  rows.forEach(r=>{const b=r.getBoundingClientRect();const c=(b.top+b.bottom)/2;const d=Math.abs(c-line);if(d<bd){bd=d;best=r;}});
+  if(!best)return;
+  const i=+best.dataset.i;
+  if(i!==curIdx){
+    curIdx=i;rows.forEach(r=>r.classList.toggle('cur',r===best));
+    tgtY=slabs[i].userData.yRest;
+    const tl=best.dataset.tool||null;
+    if(tl!==curTool){curTool=tl;
+      document.querySelectorAll('#river .inline').forEach(n=>n.remove());
+      if(tl){const s=SAMPLES[tl];const html='<div class="k">Sample run<span>'+s.status+'</span></div><div class="in">'+s.inp+'</div><div class="out">'+s.out+'</div><div class="go">Open the tool →</div>';
+        if(narrow){const box=document.createElement('div');box.className='inline surface-inline';box.innerHTML=html;best.querySelector('div').appendChild(box);surf.classList.remove('on');}
+        else{surf.innerHTML=html.replace('</div><div class="in">','</div><h4>'+s.title+'</h4><div class="in">');surf.classList.add('on');}}
+      else surf.classList.remove('on');}
+  }
+}
+let ticking=false;
+addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(()=>{readingLine();ticking=false;});}},{passive:true});
+
+/* ---------- labels projected from the object ---------- */
+const _v=new T.Vector3();
+function project(m,dx){_v.set(m.userData.x+dx,m.position.y+TH[m.userData.k]/2,m.userData.z+DP[m.userData.k]/2).project(camera);
+  return [(_v.x*0.5+0.5)*innerWidth,(-_v.y*0.5+0.5)*innerHeight];}
+function placeLabels(){
+  const m=slabs[curIdx],e=E[curIdx];
+  const [sx,sy]=project(m,m.userData.L/2);
+  tag.style.left=(sx+46)+'px';tag.style.top=(sy-2)+'px';
+  tag.textContent=e.d.slice(0,4)+' · '+(e.k==='note'?'note':e.k==='tool'?'tool':e.w.toLocaleString()+' words · '+Math.max(1,Math.round(e.w/230))+' min');
+  tag.classList.toggle('on',!narrow&&entered);
+  if(curTool&&!narrow){surf.style.left=Math.min(innerWidth-360,sx+40)+'px';surf.style.top=Math.max(72,Math.min(innerHeight-260,sy+22))+'px';}
+}
+
+/* ---------- entrance: the stack rises out of the ground, oldest first ---------- */
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let t0=performance.now(),entered=reduced;
+const easeOut=x=>1-Math.pow(1-x,3);
+function entrance(now){
+  if(entered)return;
+  const t=(now-t0)/1000;let done=true;
+  slabs.forEach((m,i)=>{const s=Math.max(0,Math.min(1,(t-i*0.07)/0.9));if(s<1)done=false;
+    m.position.y=m.userData.yRest-(1-easeOut(s))*9;});
+  if(done)entered=true;
+}
+if(reduced)slabs.forEach(m=>m.position.y=m.userData.yRest);
+
+/* ---------- loop ---------- */
+let prev=performance.now();
+readingLine();layout();
+(function frame(now){
+  const dt=Math.min(0.05,(now-prev)/1000);prev=now;
+  entrance(now);
+  const a=1-Math.pow(1-0.08,dt*60);
+  curY+=(tgtY-curY)*a;
+  slabs.forEach(m=>{const u=m.userData;u.liftT=(u.i===curIdx&&entered)?1:0;u.lift+=(u.liftT-u.lift)*a;
+    if(entered)m.position.y=u.yRest+u.lift*0.14;
+    m.material.emissive.copy(ACC).multiplyScalar(u.lift*(u.k==='essay'?0.22:0.30));});
+  place();placeLabels();
+  renderer.render(scene,camera);
+  requestAnimationFrame(frame);
+})(performance.now());
+
+window.__snap=(y)=>{scrollTo({top:y,behavior:'instant'});readingLine();curY=tgtY;entered=true;slabs.forEach(m=>{m.position.y=m.userData.yRest;m.userData.lift=m.userData.i===curIdx?1:0;});place();placeLabels();renderer.render(scene,camera);};
+window.__stats=()=>({tri:renderer.info.render.triangles,calls:renderer.info.render.calls,idx:curIdx,stackH:+STACK_H.toFixed(2)});
+})();
+</script>
+</body>
+</html>

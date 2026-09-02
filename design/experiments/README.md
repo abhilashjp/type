@@ -40,6 +40,33 @@ Known rough edges at this commit: the grove overlaps the masthead at the
 top left, the paddy is still busy behind the numeral, the small labels at
 right are hard to read on green, and the mukhappu gables are barely visible.
 
+## 07 — The index is the object
+
+The direction that replaced 06 after it was called out as a Towers copy.
+No landscape, no timeline, no play button. Every entry on the site is a
+slab: length is its word count, thickness and material are its kind
+(essay, note, tool). They stack oldest to newest into one object that
+stands behind the page. The reading line at 42% of the viewport picks the
+current entry; the camera descends the stack course by course as you
+read, the course lifts and takes the accent, and a projected mono tag
+reads its real length. When the current entry is a tool it opens as a
+surface beside its slab with a sample run already in it; on phones the
+same surface sits inline under the row. The stack rises out of the ground
+on arrival, oldest first, and skips that under reduced motion. Editorial
+column with container lines on the left; the object owns the right.
+
+Mechanics taken from the skills, not their look: self-assembly as the
+motion thesis (`threejs-towers`), scroll as the timeline with one
+persistent scene (`build-threejs-scroll-worlds`), a backdrop that gets out
+of the way (`threejs-landscape`, reduced here to a shadow-only plane),
+mono utility labels with one accent (`editorial-tech`, `container-lines`,
+`number-details`), and the real workflow as the proof (`product-proof-saas`).
+182 triangles, 16 draw calls.
+
+The three tools and their sample runs are placeholders for tools that do
+not exist yet; they are marked in the source and labelled "sample run" on
+the page.
+
 Each directory holds `index.html`, the screenshots produced by
 `design/shot.sh`, and after review a `VERDICT.md` with the critic's output
 and one line on why it was kept or cut.
