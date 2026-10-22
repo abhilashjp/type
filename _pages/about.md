@@ -27,11 +27,10 @@ description: "Abhilash John Philip is a product manager at Salesforce building u
     {% include work-list.html education=false %}
 
     <h2 class="label" style="margin:40px 0 10px">Elsewhere</h2>
-    <p class="elsewhere"><a href="{{ site.resume }}" rel="noopener">Resume</a><a href="{{ site.linkedin }}" rel="me noopener">LinkedIn</a><a href="https://github.com/{{ site.github }}" rel="me noopener">GitHub</a><a href="{{ site.twitter }}" rel="me noopener">Twitter / X</a><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <p class="elsewhere"><a href="{{ site.resume }}" rel="noopener">Resume</a><a href="{{ site.linkedin }}" rel="me noopener">LinkedIn</a><a href="https://github.com/{{ site.github }}" rel="me noopener">GitHub</a><a href="{{ site.twitter }}" rel="me noopener">Twitter / X</a><a href="mailto:{{ site.email }}">Email</a></p>
   </div>
 
   <figure>
     <img src="{{ '/images/pages/about.jpg' | relative_url }}" width="800" height="1000" alt="Abhilash John Philip in a light-blue polo and dark hoodie, standing on a lawn near the Golden Gate Bridge">
-    <figcaption>San Francisco.</figcaption>
   </figure>
 </div>
