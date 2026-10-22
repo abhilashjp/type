@@ -4,7 +4,7 @@
 {%- if page.layout == 'post' or page.url contains '/writing' or page.layout == 'tag_page' -%}{%- assign sec = 'writing' -%}{%- elsif page.url contains '/about' -%}{%- assign sec = 'about' -%}{%- endif -%}
 <header class="site">
   <div class="wrap">
-    <a class="brand" href="{{ home }}">{% include mango.svg %}{{ site.title }}</a>
+    <a class="brand" href="{{ home }}"><img src="{{ '/images/logo.png' | relative_url }}" width="153" height="96" alt="">{{ site.title }}</a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
     <nav class="menu" id="menu" aria-label="Site">
       <a href="{% if on_home %}#writing{% else %}{{ '/writing/' | relative_url }}{% endif %}" data-sec="writing"{% if sec == 'writing' %} aria-current="page"{% endif %}>Writing</a>
