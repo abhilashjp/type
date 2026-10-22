@@ -1,6 +1,6 @@
 <ul class="rows work">
   {%- for j in site.data.work.jobs %}
-  <li><span class="co">{{ j.co }}</span><span class="role">{{ j.role }}</span><span class="meta">{{ j.years }}</span></li>
+  <li><span class="co">{{ j.co }}</span><span class="role">{{ j.role }}</span><span class="meta">{{ j.years }}</span>{% if j.learned %}<span class="learn" aria-label="What it taught me">{% for t in j.learned %}<span>{{ t }}</span>{% endfor %}</span>{% endif %}</li>
   {%- endfor %}
 </ul>
 {%- unless include.education == false %}

@@ -10,7 +10,7 @@
       <a href="{% if on_home %}#writing{% else %}{{ '/writing/' | relative_url }}{% endif %}" data-sec="writing"{% if sec == 'writing' %} aria-current="page"{% endif %}>Writing</a>
       <a href="{% if on_home %}#projects{% else %}{{ '/#projects' | relative_url }}{% endif %}" data-sec="projects">Projects</a>
       <a href="{{ '/about/' | relative_url }}"{% if sec == 'about' %} aria-current="page"{% endif %}>About</a>
-      <a class="pill" href="{{ site.resume }}" rel="noopener">Resume</a>
+      <a href="{{ site.resume }}" rel="noopener">Resume</a>
     </nav>
   </div>
 </header>

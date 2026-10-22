@@ -18,7 +18,7 @@ description: "Abhilash John Philip is a product manager at Salesforce building u
 
     <div class="prose">
       <p>I’m Abhilash John Philip. I build products that sit where technical systems meet commercial outcomes: how software is metered, priced, billed and taxed. Right now I’m at Salesforce, building enterprise usage management in Revenue Cloud, with a focus on usage pooling and governance.</p>
-      <p>Before that I was at Chargebee, first leading invoicing and taxation for subscriptions, then leading the usage-based billing platform: event ingestion, aggregation, rating and invoicing, including rate cards for AI infrastructure companies. Earlier I grew PayU’s partner ecosystem through APIs and developer experience, worked on the consumer app at Housing.com, and built catalogue, logistics and GST systems at Industrybuying.</p>
+      <p>Before that I was at Chargebee, first leading invoicing and taxation for subscriptions, then leading the usage-based billing platform: event ingestion, aggregation, rating and invoicing, including rate cards for AI infrastructure companies. Earlier I grew PayU’s partner ecosystem through APIs and developer experience, worked on the consumer app at Housing.com, and built catalogue, supply chain and GST systems at Industrybuying.</p>
       <p>I like building things end to end. I co-founded Hedcet in college, an IT services and product company that was later acqui-hired. I tried to make air purifiers affordable with Saafair, and I wrote about <a href="{{ '/startup-diaries/2023/05/05/startup-diaries-saafair-air-purifiers/' | relative_url }}">why we shut it down</a>. Today I run LookupTax, which validates tax IDs for 100+ countries, and UsagePricing, a knowledge base on how 400+ usage-based companies price.</p>
       <p>The question I keep coming back to is how software gets priced as it moves from seats to usage to outcomes to autonomous agents. This site is where I write up what I try along the way.</p>
     </div>
@@ -27,11 +27,10 @@ description: "Abhilash John Philip is a product manager at Salesforce building u
     {% include work-list.html education=false %}
 
     <h2 class="label" style="margin:40px 0 10px">Elsewhere</h2>
-    <p class="elsewhere"><a href="{{ site.resume }}" rel="noopener">Resume</a><a href="{{ site.linkedin }}" rel="me noopener">LinkedIn</a><a href="https://github.com/{{ site.github }}" rel="me noopener">GitHub</a><a href="{{ site.twitter }}" rel="me noopener">Twitter / X</a><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <p class="elsewhere"><a href="{{ site.resume }}" rel="noopener">Resume</a><a href="{{ site.linkedin }}" rel="me noopener">LinkedIn</a><a href="https://github.com/{{ site.github }}" rel="me noopener">GitHub</a><a href="{{ site.twitter }}" rel="me noopener">Twitter / X</a><a href="mailto:{{ site.email }}">Email</a></p>
   </div>
 
   <figure>
     <img src="{{ '/images/pages/about.jpg' | relative_url }}" width="800" height="1000" alt="Abhilash John Philip in a light-blue polo and dark hoodie, standing on a lawn near the Golden Gate Bridge">
-    <figcaption>San Francisco.</figcaption>
   </figure>
 </div>

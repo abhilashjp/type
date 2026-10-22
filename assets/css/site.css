@@ -195,8 +195,10 @@ a:focus-visible { outline: 2px solid var(--mango); outline-offset: 2px; border-r
 .prose code { font: .86em var(--mono); background: var(--chip); padding: .12em .36em; border-radius: 4px; }
 .prose pre { overflow-x: auto; padding: 16px 18px; background: #f7f8f5; border-radius: 10px; font-size: 14px; line-height: 1.55; }
 .prose pre code { background: none; padding: 0; }
-.prose table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; font-size: 15px; line-height: 1.5; }
-.prose th, .prose td { padding: 8px 10px; border: 1px solid var(--rule); vertical-align: top; }
+.prose table { display: block; width: fit-content; max-width: 100%; margin-inline: auto; overflow-x: auto; border: 1px solid var(--rule); border-collapse: collapse; font-size: 15px; line-height: 1.5; }
+.prose th, .prose td { padding: 10px 12px; border: 1px solid var(--rule); vertical-align: top; }
+.prose td:has(> img) { text-align: center; vertical-align: middle; }
+.prose td img { display: inline-block; border-radius: 4px; }
 .prose th { background: #fafaf8; text-align: left; }
 .prose iframe { display: block; border: 0; margin-inline: auto; }
 .prose hr { border: 0; border-top: 1px solid var(--rule); margin: 2.2em 0; }
@@ -231,3 +233,9 @@ a:focus-visible { outline: 2px solid var(--mango); outline-offset: 2px; border-r
 .site-foot p { margin: 0; } .site-foot .who { margin-bottom: 6px; color: var(--ink); }
 .sections.years { gap: 32px; padding-top: 24px; }
 .hero .more { white-space: nowrap; }
+
+/* What each role taught: small tags under the role */
+.learn { display: flex; flex-wrap: wrap; gap: 6px; grid-column: 2 / -1; margin-top: 2px; }
+.learn span { padding: 3px 8px; border-radius: 999px; background: var(--chip); font: 11px/1.4 var(--mono); color: var(--muted); }
+.lede-tags { margin: -2px 0 10px; }
+@media (max-width: 560px) { .work .learn { grid-column: 1 / -1; grid-row: 3; } }

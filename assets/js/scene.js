@@ -733,7 +733,7 @@
     { id: 'ai', label: 'AI economics', at: [1.4, 8.0, 2.35], title: 'AI economics', lede: 'How software gets priced as it moves from seats to usage to outcomes to autonomous agents.',
       items: [['Focus', 'AI token costs, metering and outcome-based pricing.'], ['Now', 'Leading research on outcome-based pricing at Salesforce.'], ['Before', 'Matrix pricing and rate cards for AI infrastructure companies at Chargebee.']] },
     { id: 'work', label: 'Work', at: [1.4, 3.8, 2.55], title: 'Work', lede: 'Taking products from 0 to 1 and to scale across enterprise SaaS, fintech and platforms.',
-      items: [['Salesforce · Senior PM · 2026–', 'Enterprise usage management; integrating the rating engine after the m3ter acquisition.'], ['Chargebee · Staff → Principal PM · 2021–26', 'Usage-based billing; invoicing and global tax.'], ['PayU · Senior PM · 2019–21', 'Partner APIs and developer experience.'], ['Housing.com · PM · 2018–19', 'Research and experimentation on the consumer app.'], ['Industrybuying · PM · 2015–18', 'A 1.5M-SKU catalogue, courier and serviceability, and the GST transition.']] }
+      items: [['Salesforce · Senior PM · 2026–', 'Enterprise usage management; integrating the rating engine after the m3ter acquisition.'], ['Chargebee · Staff → Principal PM · 2021–26', 'Usage-based billing; invoicing and global tax.'], ['PayU · Senior PM · 2019–21', 'Partner APIs and developer experience.'], ['Housing.com · PM · 2018–19', 'Research and experimentation on the consumer app.'], ['Industrybuying · PM · 2015–18', 'A 1.5M-SKU catalogue, supply chain (seller, order and warehouse systems, courier and serviceability) and the GST transition.']] }
   ];
   let card = null, openPin = null, closeTimer;
   function buildPins() {
