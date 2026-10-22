@@ -230,3 +230,4 @@ a:focus-visible { outline: 2px solid var(--mango); outline-offset: 2px; border-r
 .lost p { margin: 0; color: var(--muted); font-size: 18px; }
 .site-foot p { margin: 0; } .site-foot .who { margin-bottom: 6px; color: var(--ink); }
 .sections.years { gap: 32px; padding-top: 24px; }
+.hero .more { white-space: nowrap; }
