@@ -126,7 +126,7 @@ a:focus-visible { outline: 2px solid var(--mango); outline-offset: 2px; border-r
 .rows li > * { min-width: 0; }
 .meta { font: 12.5px var(--mono); color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .post a { text-decoration: none; } .post a:hover { text-decoration: underline; text-decoration-color: var(--rule); }
-.tag { font: 11px var(--mono); color: var(--muted); margin-left: 8px; }
+.tag { font: 11px var(--mono); color: var(--muted); margin-left: 8px; white-space: nowrap; }
 
 .proj li { grid-template-columns: 40px 1fr auto; align-items: center; }
 .mono { width: 40px; height: 40px; border-radius: 9px; display: grid; place-items: center; font: 600 13px var(--mono); color: #fff; }
