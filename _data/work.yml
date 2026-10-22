@@ -1,10 +1,10 @@
 jobs:
-  - { co: Salesforce, role: Senior PM · usage management, years: '2026–' }
-  - { co: Chargebee, role: Principal PM · usage-based billing, years: '2024–26' }
-  - { co: Chargebee, role: Staff PM · invoicing and global tax, years: '2021–24' }
-  - { co: PayU, role: Senior PM · partner APIs and DX, years: '2019–21' }
-  - { co: Housing.com, role: PM · consumer app, years: '2018–19' }
-  - { co: Industrybuying, role: PM · catalogue, supply chain, GST, years: '2015–18' }
+  - { co: Salesforce, role: 'Senior PM · usage management', years: '2026–' }
+  - { co: Chargebee, role: 'Principal PM · usage-based billing', years: '2024–26' }
+  - { co: Chargebee, role: 'Staff PM · invoicing and global tax', years: '2021–24' }
+  - { co: PayU, role: 'Senior PM · partner APIs and DX', years: '2019–21' }
+  - { co: Housing.com, role: 'PM · consumer app', years: '2018–19' }
+  - { co: Industrybuying, role: 'PM · catalogue, supply chain, GST', years: '2015–18' }
 education:
   - { co: CET Trivandrum, role: 'B.Tech, Industrial Engineering', years: '2009–13' }
   - { co: MIT GSL, role: 'Startup accelerator, IIT Bombay', years: '2013' }
