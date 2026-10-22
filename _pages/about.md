@@ -31,6 +31,6 @@ description: "Abhilash John Philip is a product manager at Salesforce building u
   </div>
 
   <figure>
-    <img src="{{ '/images/pages/about.jpg' | relative_url }}" width="800" height="1000" alt="Abhilash John Philip in a light-blue polo and dark hoodie, standing on a lawn near the Golden Gate Bridge">
+    <img src="{{ '/images/pages/about.jpg' | relative_url }}" width="600" height="768" alt="Abhilash John Philip in a light-blue polo and dark hoodie, standing on a lawn near the Golden Gate Bridge">
   </figure>
 </div>
