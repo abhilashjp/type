@@ -13,7 +13,7 @@ description: "Abhilash John Philip is a product manager at Salesforce building u
       <li><b>Now</b>Senior Product Manager at Salesforce, building usage management in Revenue Cloud.</li>
       <li><b>Focus</b>Usage-based pricing, metering, billing, tax compliance and the economics of AI.</li>
       <li><b>On the side</b><a href="https://lookuptax.com" rel="noopener">LookupTax</a> and <a href="https://usagepricing.com" rel="noopener">UsagePricing</a>.</li>
-      <li><b>From</b>Kerala. Industrial engineering at CET Trivandrum.</li>
+      <li><b>From</b>Kerala.</li>
     </ul>
 
     <div class="prose">
@@ -24,7 +24,7 @@ description: "Abhilash John Philip is a product manager at Salesforce building u
     </div>
 
     <h2 class="label" style="margin:40px 0 10px">Work</h2>
-    {% include work-list.html %}
+    {% include work-list.html education=false %}
 
     <h2 class="label" style="margin:40px 0 10px">Elsewhere</h2>
     <p class="elsewhere"><a href="{{ site.resume }}" rel="noopener">Resume</a><a href="{{ site.linkedin }}" rel="me noopener">LinkedIn</a><a href="https://github.com/{{ site.github }}" rel="me noopener">GitHub</a><a href="{{ site.twitter }}" rel="me noopener">Twitter / X</a><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
