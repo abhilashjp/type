@@ -29,6 +29,11 @@ Key facts:
 - [{{ post.title }}]({{ post.url | absolute_url }}) ({{ post.date | date: '%B %Y' }}{% if post.kind %}, {{ post.kind }}{% endif %}): {{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 200 }}
 {%- endfor %}
 
+## Selected essays elsewhere
+{% assign essays = site.elsewhere | sort: 'date' | reverse %}{% for e in essays %}
+- [{{ e.title }}]({{ e.link }}) ({{ e.site }}, {{ e.date | date: '%B %Y' }}): {{ e.description }}
+{%- endfor %}
+
 ## Elsewhere
 
 - [LinkedIn]({{ site.linkedin }})

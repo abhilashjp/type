@@ -144,12 +144,13 @@ a:focus-visible { outline: 2px solid var(--mango); outline-offset: 2px; border-r
 .principles li::marker { color: var(--muted); }
 .draft { font: 11px var(--mono); color: var(--muted); text-transform: none; letter-spacing: 0; }
 
-.site-foot { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 24px; padding-block: 24px 40px; border-top: 1px solid var(--rule); font-size: 14px; color: var(--muted); }
+.site-foot { display: grid; grid-template-columns: 2fr 1fr 1.4fr 1fr; gap: 24px; padding-block: 24px 40px; border-top: 1px solid var(--rule); font-size: 14px; color: var(--muted); }
 .site-foot h2 { margin: 0 0 8px; font: 400 11px var(--mono); color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
 .site-foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
 .site-foot a { text-decoration: none; }   .site-foot a:hover { color: var(--ink); }
 .site-foot .small { grid-column: 1 / -1; font: 11.5px var(--mono); }
 @media (max-width: 640px) { .pin { padding: 6px; gap: 0; } .pin .t { display: none; } .pin i { width: 9px; height: 9px; } }
+@media (max-width: 900px) { .site-foot { grid-template-columns: repeat(3, 1fr); } .site-foot > div:first-child { grid-column: 1 / -1; } }
 @media (max-width: 560px) {
   .work li { grid-template-columns: 1fr auto; } .work .role { grid-column: 1 / -1; grid-row: 2; }
   .site-foot { grid-template-columns: 1fr 1fr; } .site-foot > div:first-child { grid-column: 1 / -1; }

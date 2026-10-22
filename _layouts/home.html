@@ -22,7 +22,10 @@ layout: default
     <div class="rail"><h2 class="label" id="h-writing">Writing</h2><a href="{{ '/writing/' | relative_url }}">All writing →</a></div>
     <div class="body">
       <ul class="rows">
-        {%- for post in site.posts limit: 5 %}
+        {%- assign featured = site.elsewhere | where: 'featured', true %}
+        {%- assign recent = site.posts | slice: 0, 3 %}
+        {%- assign mixed = featured | concat: recent | sort: 'date' | reverse %}
+        {%- for post in mixed %}
         {% include post-row.html post=post %}
         {%- endfor %}
       </ul>

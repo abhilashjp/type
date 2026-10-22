@@ -20,6 +20,11 @@ resume:      'https://flowcv.com/resume/voj9hn3ehddg'
 markdown:  kramdown
 permalink: pretty
 
+# Essays published on LookupTax and UsagePricing, listed in Writing. Not rendered as pages.
+collections:
+  elsewhere:
+    output: false
+
 plugins:
   - jekyll/tagging
 
