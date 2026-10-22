@@ -218,7 +218,7 @@ a:focus-visible { outline: 2px solid var(--mango); outline-offset: 2px; border-r
 .about { display: grid; grid-template-columns: minmax(0, 680px) 300px; justify-content: space-between; gap: 32px 64px; padding-block: 64px 8px; align-items: start; }
 .about h1 { margin: 0 0 18px; font-size: clamp(2.3rem, 4.4vw, 3.4rem); line-height: 1.06; letter-spacing: -.022em; font-weight: 600; }
 .about figure { margin: 0; position: sticky; top: calc(var(--hdr) + 24px); }
-.about figure img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 16px; }
+.about figure img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 56% 44% 48% 52% / 41% 38% 62% 59%; }
 .about figcaption { margin-top: 10px; font: 12px var(--mono); color: var(--muted); }
 .facts { list-style: none; margin: 0 0 28px; padding: 16px 18px; display: grid; gap: 8px; background: #fafaf7; border: 1px solid var(--rule); border-radius: 12px; font-size: 15.5px; }
 .facts b { font: 600 11.5px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-right: 6px; }
