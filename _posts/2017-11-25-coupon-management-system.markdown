@@ -5,6 +5,8 @@ category: product
 tags:
 - Coupons
 - CMS
+kind: guide
+description: "A practical blueprint for an e-commerce coupon management system: discount types, offer creation, dashboards, consumption history and vouchers."
 ---
 Building a coupon management was the first project I did at IB. Though I searched for a CMS to use as a reference but couldn’t find one. Eventually I conceptualised the entire system myself.
 
@@ -40,7 +42,7 @@ A simple coupon management system should have the following
 
 **Flat discounts**
 
-![](https://cdn-images-1.medium.com/max/1600/0*mmKbBWX9sMAFXuW3.)
+![Screenshot: Flat discounts](https://cdn-images-1.medium.com/max/1600/0*mmKbBWX9sMAFXuW3.)
 
 **Offer name**: Purpose of this field is for easy identification of a type of offer.
 
@@ -73,7 +75,7 @@ No Value would indicate unlimited usage by a user. The tracking of a coupon/vouc
 
 **Percentage Discounts**
 
-![](https://cdn-images-1.medium.com/max/1600/0*E8gwmqm8_C2ShTm_.)
+![Screenshot: Percentage Discounts](https://cdn-images-1.medium.com/max/1600/0*E8gwmqm8_C2ShTm_.)
 
 * **Discount Percentage** — A percentage discount based on the include/exclude rules.
 * **Discount Amount** — A fixed total discount based on the include/exclude rules.
@@ -83,7 +85,7 @@ No Value would indicate unlimited usage by a user. The tracking of a coupon/vouc
 
 **Coupon Details**
 
-![](https://cdn-images-1.medium.com/max/1600/0*fIVjebUC78erdmNN.)
+![Screenshot: Coupon Details](https://cdn-images-1.medium.com/max/1600/0*fIVjebUC78erdmNN.)
 
 **Coupon Code**: Code used by the customer to avail a discount
 
@@ -105,29 +107,29 @@ On clicking the button a popup window should come. The window should contain a H
 
 **Voucher details**
 
-![](https://cdn-images-1.medium.com/max/1600/0*s67UTyjTidHcTTHw.)
+![Screenshot: Voucher details](https://cdn-images-1.medium.com/max/1600/0*s67UTyjTidHcTTHw.)
 
 Here a user has to enter the number of vouchers to be generated. The other fields are same as that of coupons
 
 **Selection Page**
 
-![](https://cdn-images-1.medium.com/max/1600/0*HOR7sGOKmlYSqlCB.)
+![Screenshot: Selection Page](https://cdn-images-1.medium.com/max/1600/0*HOR7sGOKmlYSqlCB.)
 
 On clicking next button in the create page the user will be redirected to a page where he will be shown an option to choose the above option. The categories option will be the default page. This default page will have an option to select the categories for applying coupon codes.
 
 This page should have a category treeview with checkboxes. Refer to the sample tree below. This design is aimed at simplifying the category selection process.
 
-![](https://cdn-images-1.medium.com/max/1600/1*yvgyex6cVBHewKjdqgN9pw.png)
+![Screenshot: Selection Page](https://cdn-images-1.medium.com/max/1600/1*yvgyex6cVBHewKjdqgN9pw.png)
 
 The user should have an option select , include and exclude brands from the above selected category. The design below is self explanatory. If no options are selected, all the brands will be included in the category list.
 
-![](https://cdn-images-1.medium.com/max/1600/0*F7Cs5C5jUX2w5L5X.)
+![Screenshot: Selection Page](https://cdn-images-1.medium.com/max/1600/0*F7Cs5C5jUX2w5L5X.)
 
-![](https://cdn-images-1.medium.com/max/1600/0*24XV2WFozUR-4OXT.)
+![Screenshot: Selection Page](https://cdn-images-1.medium.com/max/1600/0*24XV2WFozUR-4OXT.)
 
 If the user selects the other button **— “Create Coupon codes for Products”** then following design should be shown
 
-![](https://cdn-images-1.medium.com/max/1600/0*VFAGRrJKlx0YUxe_.)
+![Screenshot: Selection Page](https://cdn-images-1.medium.com/max/1600/0*VFAGRrJKlx0YUxe_.)
 
 **Keyword search:** The user should be able to search SKU ID, product name, etc.
 
@@ -167,7 +169,7 @@ There will be three dashboards
 
 **Offer Dashboard**
 
-![](https://cdn-images-1.medium.com/max/1600/0*bPiCrdOnhUcmptm-.)
+![Screenshot: Offer Dashboard](https://cdn-images-1.medium.com/max/1600/0*bPiCrdOnhUcmptm-.)
 
 **Total usage:** It is the total number of times a particular offer was used
 
@@ -189,7 +191,7 @@ Consumption dashboard would be shown in a Tabular format with Search facility/so
 
 The following Columns would be shown:
 
-![](https://cdn-images-1.medium.com/max/1600/0*wLc06Y204X17YtG2.)
+![Screenshot: Consumption Dashboard](https://cdn-images-1.medium.com/max/1600/0*wLc06Y204X17YtG2.)
 
 All the fields in this table would be searchable via a Database search
 
@@ -201,7 +203,7 @@ Voucher consumption dashboard would be shown in a Tabular format with Search fac
 
 The following Columns would be shown:
 
-![](https://cdn-images-1.medium.com/max/1600/0*qcaED1mz9tsMsEUe.)
+![Screenshot: Voucher Dashboard](https://cdn-images-1.medium.com/max/1600/0*qcaED1mz9tsMsEUe.)
 
 All the fields in this table would be searchable via a Database search
 
@@ -224,11 +226,11 @@ The coupons can be promoted with banners, offer filters etc. The banners or the 
 
 The procedure is same as that for coupon codes. Whenever a user applies a voucher code, it applicability for the products and the validity should be checked. On successful completion of the transaction the voucher should be deactivated and rendered unusable permanently. in the table details of the email id of the user should be saved against the voucher code.
 
-![](https://cdn-images-1.medium.com/max/1600/0*e9fe3YEdAL1rRvXm.)
+![Screenshot: Applying voucher to cart](https://cdn-images-1.medium.com/max/1600/0*e9fe3YEdAL1rRvXm.)
 
-![](https://cdn-images-1.medium.com/max/1600/0*LECy-sjfDO6teYNo.)
+![Screenshot: Applying voucher to cart](https://cdn-images-1.medium.com/max/1600/0*LECy-sjfDO6teYNo.)
 
-![](https://cdn-images-1.medium.com/max/1600/0*zU8bKdNWcSDOpJ70.)
+![Screenshot: Applying voucher to cart](https://cdn-images-1.medium.com/max/1600/0*zU8bKdNWcSDOpJ70.)
 
 The coupons will be applied at item level and the item level tax will be applied to the discounted amount.
 
@@ -267,7 +269,7 @@ Assume a user can use a coupon code **XYZ123** 5 times. He/she uses it for the f
 
 In the promotions dashboard, corresponding to every offers there should be an option to edit T&C. On clicking the option the edit the text editor should open with the previously submitted Terms & Conditions
 
-![](https://cdn-images-1.medium.com/max/1600/0*82wWycVrPKi_1mDq.)
+![Screenshot: Edit T&C option in the admin panel.](https://cdn-images-1.medium.com/max/1600/0*82wWycVrPKi_1mDq.)
 
 **Copy T&C url to Clipboard**
 
@@ -277,7 +279,7 @@ There url of the terms and conditions page should be shown in the admin panel an
 
 There should be a link to the T&C page in the cart along success message of the coupon/voucher
 
-![](https://cdn-images-1.medium.com/max/1600/0*23N7cLknz6P8eSV0.)
+![Screenshot: Terms & Conditions Page.](https://cdn-images-1.medium.com/max/1600/0*23N7cLknz6P8eSV0.)
 
 If no terms & conditions are available there should be a default T&C page for the coupons
 

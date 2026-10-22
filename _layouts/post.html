@@ -1,39 +1,33 @@
 ---
 layout: default
 ---
+{%- assign words = content | number_of_words -%}
+{%- assign minutes = words | divided_by: 220 | plus: 1 -%}
+<article class="article wrap">
+  <header>
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ '/' | relative_url }}">Home</a> / <a href="{{ '/writing/' | relative_url }}">Writing</a></nav>
+    {% if page.kind %}<p class="kind">{{ page.kind }}</p>{% else %}<p class="kind">Writing</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="dek">{{ page.description }}</p>{% endif %}
+    <p class="byline">By <a href="{{ '/about/' | relative_url }}" rel="author">{{ site.title }}</a> · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%-d %B %Y' }}</time> · {{ minutes }} min read</p>
+  </header>
 
-{% include base_path %}
-
-{% if page.image %}
-  <meta itemprop='og:image' content='{{ base_path }}{{ page.image }}'>
-{% endif %}
-
-<div class='o-wrapper'>
-  <div class='o-grid'>
-    <div class='o-grid__col'>
-      <article class='c-post' itemscope itemtype='http://schema.org/BlogPosting'>
-
-        <h1 class='c-post__title u-text-center'>{{ page.title }}</h1>
-
-        <time class='c-post__date' datetime='{{ page.date | date_to_xmlschema }}' itemprop='datePublished'>{{ page.date | date: '%d %b %Y' }}</time>
-
-        <div class='c-content' itemprop='articleBody'>
-          {% include page-image.html %}
-
-          {{ content }}
-        </div>
-
-        <div class='c-tags'>
-          {% for tag in page.tags %}
-            <a href='{{ site.baseurl }}/tag/{{ tag }}'>{{ tag }}</a>
-          {% endfor %}
-        </div>
-
-        <hr>
-
-        {% include disqus.html %}
-
-      </article>
-    </div>
+  <div class="prose">
+    {{ content }}
   </div>
-</div>
+
+  <footer class="post-foot">
+    {%- if page.tags.size > 0 %}
+    <ul class="tags" aria-label="Tags">
+      {%- for tag in page.tags %}
+      <li><a href="{{ tag | tag_url }}">{{ tag }}</a></li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+    <nav class="pn" aria-label="More writing">
+      {%- if page.previous %}<a class="prev" href="{{ page.previous.url | relative_url }}"><span>← Older</span>{{ page.previous.title }}</a>{% endif %}
+      {%- if page.next %}<a class="next" href="{{ page.next.url | relative_url }}"><span>Newer →</span>{{ page.next.title }}</a>{% endif %}
+    </nav>
+    <p><a class="more" href="{{ '/writing/' | relative_url }}">← All writing</a></p>
+  </footer>
+</article>

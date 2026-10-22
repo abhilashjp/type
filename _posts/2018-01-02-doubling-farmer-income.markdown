@@ -6,8 +6,8 @@ tags:
 - opinion
 - farmer suicides
 - agriculture
-
-
+kind: policy
+description: "Why doubling farm income needs fixes in the post-harvest chain: APMC markets, village warehousing, cold storage and minimum support price distortions."
 ---
 Recently NITI Ayog released its ‘Three Year action agenda’ in which one of the key agenda is to double the agriculture income by 2022. Today we are witnessing a scenario of crop losses due to either elusive or excessive rainfall on the one side and on the other side farmers are committing suicide because they have excess produce and not getting fair value for their produce.
 
@@ -17,7 +17,7 @@ This ambitious target will be difficult to achieve unless we solve the issues in
 2. Inadequate warehousing facilities at the village level leading to post harvest losses and distress selling
 3. Huge gap in the exiting and required cold chain infrastructure. Below chart gives us an idea of the gap
 
-![](https://cdn-images-1.medium.com/max/1600/1*LzoFNdaGtpk1OuWbXsdJhQ.png)Gap Analysis of Cold-chain Infrastructure in India
+![Gap analysis of cold-chain infrastructure in India](https://cdn-images-1.medium.com/max/1600/1*LzoFNdaGtpk1OuWbXsdJhQ.png)Gap Analysis of Cold-chain Infrastructure in India
 
 4\. Minimum support price (MSP) completely ignores the demand dimension and hence leading to inefficient allocation of resources and unwanted accumulation of cereals. MSP regime has also caused distortions in cropping patterns by favoring cultivation of wheat, ice and sugarcane.
 

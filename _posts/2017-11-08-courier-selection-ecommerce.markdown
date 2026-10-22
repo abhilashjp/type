@@ -9,7 +9,8 @@ category:
 - product
 modified: 2017-11-07 18:30:00 +0000
 comments: true
-
+kind: case study
+description: "How we built a rules-based courier selection engine at Industrybuying to cut logistics cost, using serviceability, freight, turnaround time and service levels."
 ---
 E commerce companies ship their products to customers via multiple courier partners. Most of them have an automated courier selection process for shipping. At IB one of the major challenges we faced was the increasing logistics cost. Hence we developed a system to automatically recommend the courier to be selected for each package that was shipped from our warehouses and by our sellers spread across India. It is essential for every company who rely on multiple courier service to optimise their logistics cost. Through this article I would like to give a brief overview of a simple courier selection system. This system need not be a web app, this could be even run on a excel based system and hence even small companies can take the advantage of this approach.
 
@@ -68,15 +69,19 @@ Every LSP shares a Rate chart according to the contract signed.
 
 Below are some sample Rate charts.
 
-![](https://cdn-images-1.medium.com/max/1600/1*nyKTzLtFJmWdmtHrWiCztA.png)Fig. 1 Rate Chart type 1
+![Courier rate chart type 1](https://cdn-images-1.medium.com/max/1600/1*nyKTzLtFJmWdmtHrWiCztA.png)
+*Fig. 1 Rate Chart type 1*
 
-![](https://cdn-images-1.medium.com/max/1600/1*34sEcRbb0KJWg-_bX7JwBQ.png)Fig.2 Rate Chart Type 2
+![Courier rate chart type 2](https://cdn-images-1.medium.com/max/1600/1*34sEcRbb0KJWg-_bX7JwBQ.png)
+*Fig.2 Rate Chart Type 2*
 
 FedEx, Bluedart etc. have Type 1 rate chart. Delhivery has type 2 rate chart. Some other couriers such as Safexpress has a 3rd type of rate chart as below
 
-![](https://cdn-images-1.medium.com/max/1600/1*zehqqR0zRi6rI51F-5AHsw.png)Fig.3 Rate Chart type 3
+![Courier rate chart type 3](https://cdn-images-1.medium.com/max/1600/1*zehqqR0zRi6rI51F-5AHsw.png)
+*Fig.3 Rate Chart type 3*
 
-![](https://cdn-images-1.medium.com/max/1600/1*qtg3UZ2rpIcaOfLrKq5WNQ.png)Fig.4 Zone Matrix
+![Courier zone matrix](https://cdn-images-1.medium.com/max/1600/1*qtg3UZ2rpIcaOfLrKq5WNQ.png)
+*Fig.4 Zone Matrix*
 
 Rate Charts- LSPs prepare rate charts by laying out the flat rates applicable on the kg slabs against the Rate group. Refer to fig.3
 

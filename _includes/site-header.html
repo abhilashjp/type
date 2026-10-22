@@ -1,0 +1,16 @@
+{%- assign home = '/' | relative_url -%}
+{%- assign on_home = false -%}{%- if page.url == '/' -%}{%- assign on_home = true -%}{%- endif -%}
+{%- assign sec = '' -%}
+{%- if page.layout == 'post' or page.url contains '/writing' or page.layout == 'tag_page' -%}{%- assign sec = 'writing' -%}{%- elsif page.url contains '/about' -%}{%- assign sec = 'about' -%}{%- endif -%}
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="{{ home }}">{% include mango.svg %}{{ site.title }}</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="menu" id="menu" aria-label="Site">
+      <a href="{% if on_home %}#writing{% else %}{{ '/writing/' | relative_url }}{% endif %}" data-sec="writing"{% if sec == 'writing' %} aria-current="page"{% endif %}>Writing</a>
+      <a href="{% if on_home %}#projects{% else %}{{ '/#projects' | relative_url }}{% endif %}" data-sec="projects">Projects</a>
+      <a href="{{ '/about/' | relative_url }}"{% if sec == 'about' %} aria-current="page"{% endif %}>About</a>
+      <a class="pill" href="{{ site.resume }}" rel="noopener">Resume</a>
+    </nav>
+  </div>
+</header>

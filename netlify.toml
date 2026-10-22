@@ -3,3 +3,19 @@
   from = "/docs/*"
   to = "https://lookup-guides.netlify.app/ :splat"
   status = 200
+
+# Old page URLs from the previous theme
+[[redirects]]
+  from = "/about.html"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/resume.html"
+  to = "https://flowcv.com/resume/voj9hn3ehddg"
+  status = 302
+
+[[redirects]]
+  from = "/page/*"
+  to = "/writing/"
+  status = 301

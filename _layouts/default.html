@@ -1,24 +1,27 @@
-<!DOCTYPE html>
-<html lang='en'>
-
-{% include head.html %}
-
-<body>
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  {% include seo.html %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=JetBrains+Mono:wght@400;600{% if page.layout == 'home' %}&family=Caveat:wght@600{% endif %}&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
+  <meta name="theme-color" content="#ffffff">
   {% include analytics.html %}
-
-  <div class='js-off-canvas-container c-off-canvas-container'>
-    {% include header.html %}
-
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  {% include site-header.html %}
+  <main id="main">
     {{ content }}
-
-    {% include footer.html %}
-  </div>
-
-  <script src="{{ '/js/jquery-3.1.1.min.js' | prepend: site.baseurl }}"> </script>
-  <script src="{{ '/js/evil-icons.min.js' | prepend: site.baseurl }}">   </script>
-  <script src="{{ '/js/jquery.fitvids.js' | prepend: site.baseurl }}">   </script>
-  <script src="{{ '/js/app.js' | prepend: site.baseurl }}">              </script>
+  </main>
+  <div class="wrap">{% include site-footer.html %}</div>
+  <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+  {% if page.layout == 'home' %}<script src="{{ '/assets/js/scene.js' | relative_url }}" defer></script>{% endif %}
 </body>
-
 </html>

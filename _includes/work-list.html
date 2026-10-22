@@ -1,0 +1,13 @@
+<ul class="rows work">
+  {%- for j in site.data.work.jobs %}
+  <li><span class="co">{{ j.co }}</span><span class="role">{{ j.role }}</span><span class="meta">{{ j.years }}</span></li>
+  {%- endfor %}
+</ul>
+{%- unless include.education == false %}
+<p class="sub">EDUCATION</p>
+<ul class="rows work">
+  {%- for j in site.data.work.education %}
+  <li><span class="co">{{ j.co }}</span><span class="role">{{ j.role }}</span><span class="meta">{{ j.years }}</span></li>
+  {%- endfor %}
+</ul>
+{%- endunless %}

@@ -4,7 +4,8 @@ title: Co-Owned Property Purchase
 comments: false
 category: product
 tags: [product]
-
+kind: pitch
+description: "A hackathon pitch at PropTiger for a platform that lets people buy property together, as one answer to unaffordable housing in India."
 ---
 Below is the pitch deck I prepared for a recent global hackathon at our  company Proptiger. Our idea was to provide a platform to enable shared  property purchases. Though our team didn’t won any prize in the event, I  think this is worth sharing as the problem of unaffordability of real  estate properties is real and the our idea could be one of the solutions  to the problem.
 

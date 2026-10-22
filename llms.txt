@@ -1,0 +1,37 @@
+---
+layout: null
+permalink: /llms.txt
+---
+# {{ site.title }}
+
+> {{ site.title }} is a product manager and builder working on usage-based pricing, metering, billing, tax compliance and the economics of AI. He is a Senior Product Manager at Salesforce, building enterprise usage management in Revenue Cloud, and independently runs LookupTax and UsagePricing.
+
+Key facts:
+- Current role: Senior Product Manager, Salesforce (usage management, pooling and governance controls for enterprise usage-based selling).
+- Previously: Chargebee (Principal PM for the usage-based billing platform; Staff PM for invoicing and global tax), PayU (partner APIs and developer experience), Housing.com (consumer mobile app), Industrybuying (catalogue, logistics, GST).
+- Focus areas: usage-based pricing, metering, rating, invoicing, tax and e-invoicing compliance, outcome-based pricing, AI token costs.
+- Education: B.Tech in Industrial Engineering, College of Engineering Trivandrum. MIT Global Startup Labs, 2013.
+
+## Pages
+
+- [Home]({{ '/' | absolute_url }}): overview, latest writing, side projects and work history.
+- [About]({{ '/about/' | absolute_url }}): biography, current role, focus areas and links.
+- [Writing]({{ '/writing/' | absolute_url }}): every post, grouped by year.
+- [RSS feed]({{ '/feed.xml' | absolute_url }})
+
+## Side projects
+{% for p in site.data.projects %}
+- {% if p.url %}[{{ p.name }}]({{ p.url }}){% else %}{{ p.name }}{% endif %} ({{ p.status }}, {{ p.year }}): {{ p.text }}
+{%- endfor %}
+
+## Writing
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url | absolute_url }}) ({{ post.date | date: '%B %Y' }}{% if post.kind %}, {{ post.kind }}{% endif %}): {{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 200 }}
+{%- endfor %}
+
+## Elsewhere
+
+- [LinkedIn]({{ site.linkedin }})
+- [GitHub](https://github.com/{{ site.github }})
+- [Twitter / X]({{ site.twitter }})
+- [Resume]({{ site.resume }})

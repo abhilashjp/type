@@ -1,0 +1,24 @@
+<footer class="site-foot">
+  <div>
+    <p class="who">{{ site.title }}</p>
+    <p>{{ site.footer_line }}</p>
+  </div>
+  <div>
+    <h2>Site</h2>
+    <ul>
+      <li><a href="{{ '/writing/' | relative_url }}">Writing</a></li>
+      <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+      <li><a href="{{ '/feed.xml' | relative_url }}">RSS</a></li>
+    </ul>
+  </div>
+  <div>
+    <h2>Elsewhere</h2>
+    <ul>
+      <li><a href="{{ site.linkedin }}" rel="me noopener">LinkedIn</a></li>
+      <li><a href="{{ site.twitter }}" rel="me noopener">Twitter / X</a></li>
+      <li><a href="https://github.com/{{ site.github }}" rel="me noopener">GitHub</a></li>
+      <li><a href="{{ site.goodreads }}" rel="me noopener">Goodreads</a></li>
+    </ul>
+  </div>
+  <p class="small">{{ site.email }} · © {{ site.time | date: '%Y' }} {{ site.title }}</p>
+</footer>

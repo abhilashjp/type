@@ -1,11 +1,11 @@
 ---
-
 layout: post
-title : We’re Saving Time For Home Seekers- Here’s How!
+title: We’re Saving Time For Home Seekers- Here’s How!
 comments: false
 category: product
 tags: [product]
-
+kind: case study
+description: "How rental profiling at Housing.com matched rent seekers with landlord preferences, so people spend less time chasing homes they will not get."
 ---
 Imagine that you are moving to a new city and looking for a place for rent. What will you do? You will ideally ask for recommendations from someone you know. Maybe you will look online for those localities that are close to your office. You will probably search properties on a real estate portal and get in touch with the owner of a property you liked. Just because you liked a property doesn’t guarantee that you will get the property. You will need to convince the homeowner why you will be a better tenant. If it doesn’t work out the process restarts.
 

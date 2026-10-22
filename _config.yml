@@ -1,34 +1,26 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 title:       Abhilash John Philip
-email:       'abhilashjohn07@gmail.com'
-description: 'Neo-proletariat. Building AI proletariats.'
-baseurl:     '' # The subpath of your site, e.g. /blog
-## url:         'https://abhilashjp.github.io' # The base hostname & protocol for your site
+tagline:     Usage, pricing, billing and AI economics
+description: 'Abhilash John Philip writes about usage-based pricing, billing, tax compliance and the economics of AI, from building the products himself.'
+footer_line: 'Notes on usage, pricing, billing and AI economics, from someone building it.'
+email:       'abhilashjohnphilip@gmail.com'
+baseurl:     ''
 url:         'https://abhilashjohn.com'
-twitter:     'http://twitter.com/abhilashjp'
-github:      ''
-instagram:   'http://instagram.com/abhilashjp'
-facebook:    ''
-linkedin:    'http://linkedin.com/in/abhilashjohnphilip'
-Resume:      'https://flowcv.com/resume/voj9hn3ehddg' 
-Goodreads:   'https://www.goodreads.com/abhilashjohn'
+lang:        en_US
+
+# People and places, used in the header, footer and structured data
+twitter:     'https://twitter.com/abhilashjp'
+twitter_handle: '@abhilashjp'
+github:      'abhilashjp'
+linkedin:    'https://www.linkedin.com/in/abhilashjohnphilip'
+goodreads:   'https://www.goodreads.com/abhilashjohn'
+instagram:   'https://instagram.com/abhilashjp'
+resume:      'https://flowcv.com/resume/voj9hn3ehddg'
 
 markdown:  kramdown
 permalink: pretty
-paginate:  10
-
-sass:
-  style: compressed
 
 plugins:
-  - jekyll-paginate
   - jekyll/tagging
 
 include:
@@ -38,15 +30,22 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
+  - README.md
+  - LICENSE
+  - netlify.toml
+  - node_modules
 
 # Tags
 tag_page_dir:         tag
 tag_page_layout:      tag_page
 tag_permalink_style:  pretty
 
-# Pages path
 defaults:
   - scope:
       path: '_pages'
     values:
-      permalink: /:basename:output_ext
+      permalink: /:basename/
+  - scope:
+      type: posts
+    values:
+      layout: post
