@@ -1,11 +1,11 @@
 ---
-
 layout: post
-title : Notes on Web3
+title: Notes on Web3
 comments: false
 category: Web3
 tags: [Web3]
-
+kind: notes
+description: "Beginner notes on DeFi, NFTs and DAOs, summarised from Linda Xie’s series, with the use cases that make each concept click."
 ---
 
 Following is a summary of the series of articles shared/written by Linda Xie on the concepts of decentralized finance, NFTs & DAOs . I found these articles very insightful as a beginner as it is rich with use cases.

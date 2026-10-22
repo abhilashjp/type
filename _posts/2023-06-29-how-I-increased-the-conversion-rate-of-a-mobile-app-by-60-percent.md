@@ -4,6 +4,8 @@ title: How I increased the conversion rate of a mobile app by 60% ?
 tags: [Coversion rate, Mobile app]
 category: product
 published: true
+kind: case study
+description: "The user research and experiments behind a 60% lift in buyer conversion on the Housing.com mobile app, shipped without new backend APIs."
 ---
 
 During my time at housing.com in 2018, I was fortunate to work on the consumer mobile app. My primary job was to improve the conversion rate of the mobile app.  In this article I will try to discuss some of the initiatives that helped me to increase the conversion rate of the app.

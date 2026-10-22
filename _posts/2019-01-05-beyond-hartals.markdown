@@ -2,6 +2,8 @@
 layout: post
 title: Beyond Hartals
 published: false
+kind: policy
+description: "Kerala lost 97 days to hartals in 2018. What the shutdowns cost the economy, schools and tourism, and what could replace them as a form of protest."
 ---
 
 **97!** Uff just 3 short of century. This is the number of days, kerala has seen hartals in 2018. According to an [estimate](https://www.business-standard.com/article/economy-policy/traders-in-kerala-have-declared-2019-the-anti-hartal-year-here-s-why-118122200168_1.html), this has taken away a staggering Rs.7200 to state’s GDP. Not to mention the loss in investments.

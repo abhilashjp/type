@@ -1,12 +1,12 @@
 ---
-
 layout: post
-title : Startup diaries - Saafair.com, Air  Purifiers
+title: Startup diaries - Saafair.com, Air  Purifiers
 published: true
 comments: false
 category: startup-diaries
 tags: [Startup]
-
+kind: startup
+description: "The story of Saafair: affordable air purifiers taken from prototype to launch, sold direct to consumers, covered by the press, and eventually shut down."
 ---
 
 Every year air pollution becomes a major issue across North India during winters. It was during the winter season of 2015, me and my friend (roommate during that time) decided to buy an air purifier. When we started exploring air purifiers, we soon realized that the options available are expensive. 
