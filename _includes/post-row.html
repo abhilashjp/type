@@ -1,0 +1,1 @@
+<li class="post"><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}{% if include.post.kind %}<span class="tag">{{ include.post.kind }}</span>{% endif %}</a><time class="meta" datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: '%b %Y' }}</time></li>

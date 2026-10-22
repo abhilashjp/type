@@ -1,0 +1,36 @@
+# Side projects on the home page. status: live | acquired | shut down | award
+- name: LookupTax
+  url: https://lookuptax.com
+  mono: LT
+  color: '#4fa3b5'
+  text: Tax ID validation for 100+ countries. 50K+ monthly users, grown organically.
+  status: Live
+  year: 2024
+  live: true
+- name: UsagePricing
+  url: https://usagepricing.com
+  mono: UP
+  color: '#e0a21a'
+  text: An LLM-maintained knowledge base tracking how 400+ usage-based companies price.
+  status: Live
+  year: 2025
+  live: true
+- name: Saafair
+  mono: SA
+  color: '#7aa35e'
+  text: Affordable air purifiers, sold D2C with filter subscriptions.
+  status: Shut down
+  year: 2016
+  post: /startup-diaries/2023/05/05/startup-diaries-saafair-air-purifiers/
+- name: Hedcet
+  mono: HE
+  color: '#b0532e'
+  text: IT services and product company, co-founded in college.
+  status: Acqui-hired
+  year: 2015
+- name: Metromeet
+  mono: MM
+  color: '#8a5a3a'
+  text: MIT Global Startup Labs, demo-day runner-up.
+  status: Runner-up
+  year: 2013

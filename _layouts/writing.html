@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{%- if page.layout == 'tag_page' -%}{%- assign list = page.posts -%}{%- else -%}{%- assign list = site.posts -%}{%- endif -%}
+<div class="wrap">
+  <header class="page-head">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ '/' | relative_url }}">Home</a>{% if page.tag %} / <a href="{{ '/writing/' | relative_url }}">Writing</a>{% endif %}</nav>
+    <h1>{% if page.tag %}Tagged “{{ page.tag }}”{% else %}{{ page.title }}{% endif %}</h1>
+    {% if page.tag %}<p>{{ list.size }} {% if list.size == 1 %}post{% else %}posts{% endif %} with this tag.</p>{% else %}<p>{{ page.lede }}</p>{% endif %}
+  </header>
+
+  <div class="sections years">
+    {%- assign years = list | group_by_exp: 'p', "p.date | date: '%Y'" %}
+    {%- for y in years %}
+    <section id="y{{ y.name }}" aria-labelledby="h{{ y.name }}">
+      <div class="rail"><h2 class="label" id="h{{ y.name }}">{{ y.name }}</h2></div>
+      <div class="body">
+        <ul class="rows">
+          {%- for post in y.items %}
+          {% include post-row.html post=post %}
+          {%- endfor %}
+        </ul>
+      </div>
+    </section>
+    {%- endfor %}
+  </div>
+</div>

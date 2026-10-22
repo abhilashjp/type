@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: aspirethemes/type # Path to your Github repository
+  repo: abhilashjp/type # Path to your Github repository
   branch: master # Branch to update (master by default)
 
 media_folder: "images" # Folder where user uploaded files should go
@@ -14,6 +14,8 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Description (one sentence, shown under the title and in search results)", name: "description", widget: "text", required: false}
+      - {label: "Kind", name: "kind", widget: "select", required: false, options: ["case study", "guide", "essay", "notes", "experiment", "startup", "policy", "pitch"]}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Tags", name: "tags", widget: "list"}
