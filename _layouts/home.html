@@ -33,6 +33,7 @@ layout: default
     <div class="rail"><h2 class="label" id="h-proj">Side projects</h2></div>
     <div class="body">
       <p class="lede">Things I built on my own time. Some are live, one was acquired, one I shut down.</p>
+      <p class="learn lede-tags" aria-label="What they taught me"><span>Distribution</span><span>AI workflows</span></p>
       <ul class="rows proj">
         {%- for p in site.data.projects %}
         <li><span class="mono" style="background:{{ p.color }}" aria-hidden="true">{{ p.mono }}</span><div><h3>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.name }}</a>{% elsif p.post %}<a href="{{ p.post | relative_url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}</h3><p>{{ p.text }}</p></div><span class="status{% if p.live %} live{% endif %}">{{ p.status }} · {{ p.year }}</span></li>

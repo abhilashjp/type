@@ -233,3 +233,9 @@ a:focus-visible { outline: 2px solid var(--mango); outline-offset: 2px; border-r
 .site-foot p { margin: 0; } .site-foot .who { margin-bottom: 6px; color: var(--ink); }
 .sections.years { gap: 32px; padding-top: 24px; }
 .hero .more { white-space: nowrap; }
+
+/* What each role taught: small tags under the role */
+.learn { display: flex; flex-wrap: wrap; gap: 6px; grid-column: 2 / -1; margin-top: 2px; }
+.learn span { padding: 3px 8px; border-radius: 999px; background: var(--chip); font: 11px/1.4 var(--mono); color: var(--muted); }
+.lede-tags { margin: -2px 0 10px; }
+@media (max-width: 560px) { .work .learn { grid-column: 1 / -1; grid-row: 3; } }
