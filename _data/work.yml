@@ -4,7 +4,7 @@ jobs:
   - { co: Chargebee, role: Staff PM · invoicing and global tax, years: '2021–24' }
   - { co: PayU, role: Senior PM · partner APIs and DX, years: '2019–21' }
   - { co: Housing.com, role: PM · consumer app, years: '2018–19' }
-  - { co: Industrybuying, role: PM · catalogue, logistics, GST, years: '2015–18' }
+  - { co: Industrybuying, role: PM · catalogue, supply chain, GST, years: '2015–18' }
 education:
   - { co: CET Trivandrum, role: 'B.Tech, Industrial Engineering', years: '2009–13' }
   - { co: MIT GSL, role: 'Startup accelerator, IIT Bombay', years: '2013' }

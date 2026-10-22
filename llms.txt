@@ -8,7 +8,7 @@ permalink: /llms.txt
 
 Key facts:
 - Current role: Senior Product Manager, Salesforce (usage management, pooling and governance controls for enterprise usage-based selling).
-- Previously: Chargebee (Principal PM for the usage-based billing platform; Staff PM for invoicing and global tax), PayU (partner APIs and developer experience), Housing.com (consumer mobile app), Industrybuying (catalogue, logistics, GST).
+- Previously: Chargebee (Principal PM for the usage-based billing platform; Staff PM for invoicing and global tax), PayU (partner APIs and developer experience), Housing.com (consumer mobile app), Industrybuying (catalogue, supply chain, GST).
 - Focus areas: usage-based pricing, metering, rating, invoicing, tax and e-invoicing compliance, outcome-based pricing, AI token costs.
 - Education: B.Tech in Industrial Engineering, College of Engineering Trivandrum. MIT Global Startup Labs, 2013.
 
