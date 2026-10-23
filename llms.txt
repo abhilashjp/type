@@ -39,4 +39,3 @@ Key facts:
 - [LinkedIn]({{ site.linkedin }})
 - [GitHub](https://github.com/{{ site.github }})
 - [Twitter / X]({{ site.twitter }})
-- [Resume]({{ site.resume }})
