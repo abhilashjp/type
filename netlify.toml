@@ -12,8 +12,8 @@
 
 [[redirects]]
   from = "/resume.html"
-  to = "https://flowcv.com/resume/voj9hn3ehddg"
-  status = 302
+  to = "/about/"
+  status = 301
 
 [[redirects]]
   from = "/page/*"
